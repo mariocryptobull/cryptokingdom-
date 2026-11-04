@@ -72,8 +72,8 @@ while b * BEAT < DUR - 3.5:
     if s['vib'] > 0 and b % 4 == 0: add(mus, vibe(tones[1] + 12, .2 * s['vib']), t, pan=-.2); add(mus, vibe(tones[3], .14 * s['vib']), t + BEAT * 2, pan=.2)
     if s['pad'] > 0 and b % 4 == 0: add(mus, pad([root + 12, tones[1], tones[2]], BAR + .4, .09), t)
     b += 1
-for k, mm in enumerate([62, 65, 69, 74]): add(mus, chip(mm, .28, .6), 59.3 + k * .12)
-add(mus, bass(38, .4, 2.5), 59.3)
+for k, mm in enumerate([62, 65, 69, 74]): add(mus, chip(mm, .28, .6), 61.0 + k * .12)
+add(mus, bass(38, .4, 2.5), 61.0)
 
 # ---------------- foley from the page's events ----------------
 def ring(f, d=1.2, v=1.0):
@@ -99,6 +99,7 @@ for e in EV:
     elif ty == 'squish': add(fx, creak(.35), t); add(fx, pop(.3), t + .6)
     elif ty == 'lines': [add(fx, whoosh(.25, .18), t + k * .35) for k in range(4)]
     elif ty == 'card': add(fx, ding(.18), t)
+    elif ty == 'congrats': add(fx, pop(.6), t); [add(fx, chip(m2, .22, .25), t + .08 * k) for k, m2 in enumerate([72, 76, 79, 84])]
     elif ty == 'label': add(fx, quindar(.08, 1760), t + .05)
 def bed(t0, t1, fn, gain):
     s, e = int(t0 * SR), int(t1 * SR); tt = np.arange(e - s) / SR; x = fn(tt, t0); k = np.minimum(1, np.minimum(tt / .6, (t1 - t0 - tt) / .6))

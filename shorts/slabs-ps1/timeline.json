@@ -1,5 +1,5 @@
 {
- "dur": 63.0,
+ "dur": 64.5,
  "vo": [
   {
    "id": "v01",
@@ -99,7 +99,9 @@
    "id": "v11",
    "t": 59.4,
    "chunks": [
-    "Follow for the next teardown."
+    "Congrats!",
+    "You've discovered",
+    "TRIBUTARY LOADS!"
    ]
   }
  ]

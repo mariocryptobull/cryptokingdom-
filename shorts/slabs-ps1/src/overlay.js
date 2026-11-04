@@ -107,7 +107,10 @@ export function drawOverlay(t, cam, c) {
   uiLabel(t, { id: 'trap', t0: T.trap + .1, t1: T.same + 1.6, a: proj(V(S / 2 + .18, HS + .65, -L / 4)), lx: 540, ly: 1560, text: 'TRAPEZOID', sub: 'long beam · max 1,800 lb/ft' });
   uiLabel(t, { id: 'ta', t0: T.trib + .2, t1: T.ratio - .2, a: proj(V(-S / 4, HS + .1, 0)), lx: 540, ly: 1560, text: 'TRIBUTARY AREA', sub: 'the floor each beam carries' });
   card(t, [['SKINNY → ONE-WAY', 70, 230, '#59d4ff'], ['SQUARE → TWO-WAY', 70, 320, '#ffd23f']], T.sum + .2, 99);
+  if (t > T.follow - .05 && t < T.follow + 1.3) memeText('CONGRATS!', Wd / 2, 760, 190, fade(t, T.follow - .05, .1) * (1 - fade(t, T.follow + 1.0, .3)), Math.max(0, 1 - (t - T.follow) / .3));
+  { const tl = CUES.find(c => c.id === 'v11' && c.i === 2).t0; if (t > tl - .05) memeText('TRIBUTARY LOADS!', Wd / 2, 760, 120, fade(t, tl - .05, .12), Math.max(0, 1 - (t - tl) / .3)); }
   for (const cu of CUES) {
+    if (cu.id === 'v11' && cu.i !== 1) continue;
     if (t < cu.t0 || t > cu.t1) continue;
     if ((/ONE-WAY slab/.test(cu.text) && t > T.oneWay - .05) || (/means TWO-WAY/.test(cu.text) && t > T.twoWay - .05)) continue;
     const k = Math.min(fade(t, cu.t0, .06), 1 - fade(t, cu.t1 - .06, .06));

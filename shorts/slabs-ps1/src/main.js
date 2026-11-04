@@ -196,6 +196,8 @@ for (const s of [-1, 1]) body.add(boxM(.14, .12, .2, M.white, s * .15, .06, .12)
 const tail = []; { let par = body; for (let i = 0; i < 5; i++) { const g = new THREE.Group(); g.position.set(i ? 0 : .12, i ? .1 : .12, i ? 0 : -.18); g.add(boxM(.07, .11, .07, M.fur, 0, .05, 0)); par.add(g); tail.push(g); par = g; } }
 const shadow = mesh(new THREE.CircleGeometry(.32, 8), M.shadow, 0, .005, 0); shadow.rotation.x = -Math.PI / 2; cat.add(shadow);
 
+const confC = ['#ffe14a', '#59d4ff', '#ff6a3d', '#7cf07c', '#ff7ad9'].map(c => psx({ color: '#000', emissive: c, amb: 0, side: THREE.DoubleSide }));
+const confetti = [...Array(70)].map((_, i) => { const m = mesh(new THREE.PlaneGeometry(.07, .045), confC[i % 5], 0, -9, 0); scene.add(m); return { m, a: (i * 2.39996) % (Math.PI * 2), v: .9 + ((i * .618) % 1) * 1.4, up: 2.2 + ((i * .414) % 1) * 1.6 }; });
 cat.position.set(P0.x + .1, H + .08, P0.z + 1.2); cat.rotation.y = .15; cat.scale.setScalar(.95);
 
 // ---------- motion ----------
@@ -222,15 +224,15 @@ const CAMK = [
   [T.tri + .2, 3.6, 3.3, 3.2, 0, 1.4, -.6],
   [T.same + .2, -3.4, 3.5, 2.8, 0, 1.3, -.6],
   [T.sum, 2.8, 4.9, 4.4, 0, 1.0, -.6],
-  [T.follow, .4, 2.7, 3.1, .1, 1.75, .45],
-  [DUR, .3, 2.65, 2.9, .1, 1.72, .5],
+  [T.follow, .4, 3.3, 3.3, .1, 1.8, .45],
+  [DUR, .3, 3.25, 3.1, .1, 1.78, .5],
 ];
 const camTrack = track(CAMK.map(k => [k[0], k.slice(1)]));
 function setCamera(t) { const [px, py, pz, tx, ty, tz] = camTrack(t); const j = .005; camera.position.set(px + Math.sin(t * 13) * j, py + Math.sin(t * 11) * j, pz); camera.lookAt(tx, ty, tz); }
 
 // ---------- events ----------
-const EV = [{ t: T.rain, type: 'rain' }, { t: T.trib, type: 'trib' }, { t: T.oneWay, type: 'stamp' }, { t: T.across, type: 'flow' }, { t: T.uniform - .4, type: 'bars' },
-  { t: T.squish + .3, type: 'squish' }, { t: T.twoWay, type: 'stamp' }, { t: T.lines, type: 'lines' }, { t: T.tri, type: 'bars' }, { t: T.trap, type: 'bars' }, { t: T.follow + 1.6, type: 'card' }];
+const EV = [{ t: T.follow, type: 'congrats' }, { t: T.rain, type: 'rain' }, { t: T.trib, type: 'trib' }, { t: T.oneWay, type: 'stamp' }, { t: T.across, type: 'flow' }, { t: T.uniform - .4, type: 'bars' },
+  { t: T.squish + .3, type: 'squish' }, { t: T.twoWay, type: 'stamp' }, { t: T.lines, type: 'lines' }, { t: T.tri, type: 'bars' }, { t: T.trap, type: 'bars' }, { t: cue('v11', 2), type: 'card' }];
 for (const lt of [T.ratio, T.uniform, T.tri + .1, T.trap + .1]) EV.push({ t: +lt.toFixed(2), type: 'label' });
 window.EV = EV.sort((a, b) => a.t - b.t); window.DUR = DUR;
 
@@ -287,7 +289,7 @@ window.render = (t) => {
     body.position.y = Math.sin(t * 2.2) * .012;
     const puff = t > T.twoWay - .1 ? Math.max(0, Math.sin(clamp((t - T.twoWay + .1) / .9) * Math.PI)) : 0;
     body.scale.set(1 + .25 * puff, 1 + .16 * puff, 1 + .25 * puff);
-    cat.position.y = H + .08 + Math.max(0, Math.sin(clamp((t - T.sum - 2.2) / .6) * Math.PI)) * .25;
+    cat.position.y = H + .08 + Math.max(0, Math.sin(clamp((t - T.follow) / .6) * Math.PI)) * .3;
     head.rotation.y = chaosSpin(t);
     head.rotation.z = Math.sin(t * 1.3) * .05 + .14 * Math.sin(clamp((t - T.cat) / .5) * Math.PI);
     const sw = seg(t, T.squish, T.squish + .35), back = seg(t, T.squish + .6, T.squish + 1.1);
@@ -296,6 +298,10 @@ window.render = (t) => {
     const blink = (t % 3.3) < .12 || (t > T.follow + .8 && t < T.follow + 1.2);
     M.face.uniforms.map.value = blink ? FACE.blink : (t > T.cat && t < T.cat + 1.4) || (t > T.twoWay && t < T.twoWay + 1.2) ? FACE.wide : FACE.open;
     t = t0; }
+  // confetti
+  confetti.forEach((c, i) => { const k = t - T.follow; if (k < 0 || k > 5) { c.m.position.y = -9; return; }
+    const cx = cat.position.x, cz = cat.position.z; c.m.position.set(cx + Math.cos(c.a) * c.v * k * .8, H + 1.2 + c.up * k - 2.4 * k * k + Math.sin(k * 9 + i) * .05, cz + Math.sin(c.a) * c.v * k * .8);
+    c.m.rotation.set(k * 7 + i, k * 5 + i * .5, 0); });
   setCamera(t);
   renderer.setRenderTarget(rt); renderer.render(scene, camera);
   renderer.setRenderTarget(null); crt.material.uniforms.tSrc.value = rt.texture; crt.material.uniforms.time.value = t; renderer.render(crtScene, crtCam);
