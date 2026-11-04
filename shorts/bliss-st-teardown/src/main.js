@@ -141,7 +141,7 @@ const archMeshes = [];
   const g = layer('arches', 2.2), spring = G0 + .55, top = DECK;
   const arch = (half, r, y0, y1) => { const s = new THREE.Shape(); s.moveTo(-half, y0); s.lineTo(-r, y0); s.absarc(0, y0, r, Math.PI, 0, true); s.lineTo(half, y0); s.lineTo(half, y1); s.lineTo(-half, y1); s.closePath(); return s; };
   const geos = [];
-  for (let i = 0; i < BENTS.length - 1; i++) { const xm = (BENTS[i] + BENTS[i + 1]) / 2; for (const z of [-PZ, PZ]) { const ge = new THREE.ExtrudeGeometry(arch(.6, .47, spring, top), { depth: .16, bevelEnabled: false, curveSegments: 16 }); ge.translate(xm, 0, z - .08); geos.push(ge); } }
+  for (let i = 0; i < BENTS.length - 1; i++) { const xm = (BENTS[i] + BENTS[i + 1]) / 2; if (Math.abs(xm) < .01) continue; for (const z of [-PZ, PZ]) { const ge = new THREE.ExtrudeGeometry(arch(.6, .47, spring, top), { depth: .16, bevelEnabled: false, curveSegments: 16 }); ge.translate(xm, 0, z - .08); geos.push(ge); } }
   for (const x of BENTS) { const ge = new THREE.ExtrudeGeometry(arch(PZ + .1, PZ - .1, G0 + .42, top), { depth: .18, bevelEnabled: false, curveSegments: 16 }); ge.rotateY(Math.PI / 2); ge.translate(x - .09, 0, 0); geos.push(ge); }
   for (const xe of [-3.6, 3.6]) { geos.push(boxG(.2, top - G0 - .1, .18, xe - Math.sign(xe) * .0, G0 + (top - G0 - .1) / 2 + .1, -PZ), boxG(.2, top - G0 - .1, .18, xe, G0 + (top - G0 - .1) / 2 + .1, PZ)); }
   const a = merged(geos, M.conc); g.add(a); archMeshes.push(a);
@@ -176,9 +176,55 @@ const canopies = { old: [], neu: [] }, glass = [];
   }
   for (const s of [-1, 1]) for (let i = 0; i < 4; i++) { const p = box(.42, .2, .008, M.glass, -1.05 + i * .7, DECK + .38, s * (PLZ + PLW / 2 + .01)); g.add(p); glass.push(p); }
 }
-// station house inside the centre arch
-{ const g = layer('house', 0); g.add(box(.82, .44, 1.1, M.house, 0, G0 + .22, 0)); g.add(box(.9, .04, 1.18, M.conc, 0, G0 + .46, 0));
-  for (const s of [-1, 1]) { for (const dx of [-.24, 0, .24]) g.add(box(.14, .16, .01, M.window, dx, G0 + .26, s * .556)); g.add(box(.18, .26, .012, M.steel, .0, G0 + .13, s * .557).translateX(.3)); } L.house.slide = 2.6; }
+// station house: an enclosed mezzanine filling the centre bay right under the tracks; open pedestrian underpass below
+const MZ = G0 + .6, HW = 1.02;               // mezzanine floor, bay width between bents
+{ const g = layer('house', 0), hh = DECK - MZ, geos = [];
+  geos.push(boxG(HW, .1, 2 * PZ + .16, 0, MZ - .03, 0));                          // floor slab + lintel over the underpass
+  for (const s of [-1, 1]) geos.push(boxG(HW, hh, .16, 0, MZ + hh / 2, s * PZ));   // facades
+  g.add(merged(geos, M.conc));
+  for (const s of [-1, 1]) {
+    for (let i = 0; i < 4; i++) { const x = -.36 + i * .24; g.add(box(.17, .17, .01, M.window, x, MZ + .23, s * (PZ + .081))); g.add(box(.05, .1, .006, M.tile, x + .12 > .45 ? x - .12 : x + .12, MZ + .23, s * (PZ + .083))); }
+    g.add(box(HW, .035, .006, M.tile, 0, MZ + .07, s * (PZ + .083)));
+  }
+  g.add(box(HW - .04, .01, 2 * PZ - .2, M.plat, 0, MZ + .025, 0));               // fare-control floor
+  L.house.slide = 2.6; }
+// stairs at each pier of the station bay, from the street up into the station house
+const stairs = new THREE.Group(); scene.add(stairs);
+{ const n = 9, run = .66, rise = MZ + .02 - G0, w = .15, steps = [], rails = [], doors = [];
+  for (const sx of [-1, 1]) for (const sz of [-1, 1]) {
+    const z = sz * (PZ - .19), x0 = sx * (.69 + run);                               // foot of the stair, out in the next bay
+    for (let i = 0; i < n; i++) { const h = rise * (i + 1) / n; steps.push(boxG(run / n + .002, h, w, x0 - sx * run * (i + .5) / n, G0 + h / 2, z)); }
+    const len = Math.hypot(run, rise), r = new THREE.BoxGeometry(len, .012, .012); r.rotateZ(-sx * Math.atan2(rise, run)); r.translate(sx * (.69 + run / 2), G0 + rise / 2 + .1, z - sz * w / 2); rails.push(r);
+    doors.push(boxG(.012, .2, .13, sx * .691, MZ + .12, z));                        // doorway into the mezzanine
+  }
+  stairs.add(merged(steps, M.conc), merged(rails, M.steel), merged(doors, M.window));
+}
+// the underpass today: vendors (fruit, jewelry, tamales) and people walking through; crosswalks on both sides
+const VM = c => new THREE.MeshPhysicalMaterial({ color: c, roughness: .55, clearcoat: .2 });
+const vendors = new THREE.Group(), walkers = [];
+scene.add(vendors);
+{ const umb = (x, z, c) => { const u = new THREE.Group(); u.position.set(x, G0, z); const cone = sh(new THREE.Mesh(new THREE.ConeGeometry(.13, .05, 10), VM(c))); cone.position.y = .3; u.add(cone, box(.008, .3, .008, M.steel, 0, .15, 0)); return u; };
+  // fruit cart
+  const fr = new THREE.Group(); fr.position.set(-.3, G0, -.28); fr.add(box(.2, .1, .12, M.steel, 0, .07, 0));
+  ['#e8402e', '#ff8a3d', '#f2c230', '#3fae6a', '#e8402e', '#7a3fb0'].forEach((c, i) => fr.add(box(.06, .03, .05, VM(c), -.065 + (i % 3) * .065, .135, (i < 3 ? -.028 : .028))));
+  fr.add(umb(0, 0, '#f2c230').translateY(-G0)); vendors.add(fr);
+  // jewelry table
+  const jw = new THREE.Group(); jw.position.set(.28, G0, -.3); jw.add(box(.24, .008, .1, VM('#1d1f24'), 0, .1, 0)); for (const dx of [-.11, .11]) jw.add(box(.01, .1, .09, M.steel, dx, .05, 0));
+  for (let i = 0; i < 7; i++) jw.add(box(.012, .005, .012, M.edge, -.09 + i * .03, .107, (i % 2 ? .02 : -.02)));
+  jw.add(umb(0, 0, '#2f6fe0').translateY(-G0)); vendors.add(jw);
+  // tamale cart
+  const tm = new THREE.Group(); tm.position.set(-.32, G0, .3); tm.add(box(.15, .11, .1, M.body, 0, .075, 0)); tm.add(box(.152, .025, .102, VM('#3fae6a'), 0, .1, 0));
+  for (const dx of [-.06, .06]) { const wh = sh(new THREE.Mesh(new THREE.CylinderGeometry(.025, .025, .01, 12), M.steel)); wh.rotation.x = Math.PI / 2; wh.position.set(dx, .025, .055); tm.add(wh); }
+  tm.add(umb(0, 0, '#e8402e').translateY(-G0)); vendors.add(tm);
+  // vendors standing at their stalls
+  const person = c => { const p = new THREE.Group(); const b = sh(new THREE.Mesh(new THREE.CapsuleGeometry(.025, .08, 4, 8), VM(c))); b.position.y = .065; const hd = sh(new THREE.Mesh(new THREE.SphereGeometry(.02, 10, 8), VM('#8a6a52'))); hd.position.y = .145; p.add(b, hd); return p; };
+  for (const [x, z, c] of [[-.3, -.4, '#c84b3a'], [.28, -.4, '#3a4a6a'], [-.32, .42, '#e0d6c4']]) { const p = person(c); p.position.set(x, G0, z); vendors.add(p); }
+  // walkers crossing under the station (and over the crosswalks)
+  const WC = ['#f1efe9', '#4a5a7a', '#c84b3a', '#2f7a55', '#d8b23a', '#5a4a6a', '#9aa0a8', '#e8902e'];
+  for (let i = 0; i < 8; i++) { const p = person(WC[i]); scene.add(p); walkers.push({ p, x: -.15 + (i * .37) % .3, ph: i * .137, dir: i % 2 ? 1 : -1, v: .07 + (i % 3) * .015 }); }
+  const cw = []; for (const s of [-1, 1]) for (let z = PZ + .25; z < 2.3; z += .1) cw.push(boxG(.8, .004, .05, 0, G0 + .003, s * z));
+  base.add(merged(cw, M.paint));
+}
 
 // ---------- train (7 line): silver cars, purple stripe ----------
 const train = new THREE.Group(); scene.add(train);
@@ -257,6 +303,11 @@ window.render = t => {
   const pre = t < T.explode + .2;
   pierCols.forEach(c => { c.visible = pre || t >= T.piers + .7; c.scale.y = pre ? 1 : Math.max(pk, .001); });
   forms.forEach(f => { const on = t > T.explode + .2 && formOut < 1; f.visible = on; f.position.y = G0 + .08 + formOut * .9; M.wood.opacity = .9 * (1 - formOut); });
+  // stairs rise with the station house; vendors and walkers are today's underpass
+  const stK = pre ? 1 : eo(seg(t, T.house + .3, T.house + 1.1)); stairs.visible = stK > .01; stairs.scale.y = Math.max(stK, .01);
+  const vK = t < T.explode ? 1 - ss(seg(t, T.explode - .5, T.explode)) : eo(seg(t, T.now - .2, T.now + .6));
+  vendors.visible = vK > .01; vendors.scale.setScalar(Math.max(vK, .01));
+  for (const w of walkers) { const u = ((t * w.v + w.ph) % 1 + 1) % 1, z = (w.dir > 0 ? u : 1 - u) * 5 - 2.5; w.p.position.set(w.x, G0 + Math.abs(Math.sin(t * 9 + w.ph * 20)) * .006, z); w.p.visible = vK > .5 && Math.abs(z) < 2.45; }
   // platforms stretch in the 1950s
   const pl = 3.2 + 1.6 * extK(t); plats.forEach(p => p.scale.x = pl);
   // canopies swap during the rebuild; stained glass appears

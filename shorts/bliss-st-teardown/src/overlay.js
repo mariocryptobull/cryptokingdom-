@@ -83,7 +83,9 @@ export function drawOverlay(t, cam, c) {
   label(t, { id: 'tk', t0: T.tracks + .7, t1: T.station, a: proj(V(.6, RAIL_Y + layerY('tracks', t), 0)), ly: 480, idx: '05', name: '3 tracks', spec: 'local · express · local' });
   label(t, { id: 'pl', t0: T.platforms + .7, t1: T.canopies + .2, a: proj(V(.9, DECK + .24 + layerY('platforms', t), PLZ)), ly: 1150, idx: '06', name: 'Side platforms', spec: 'one per direction' });
   label(t, { id: 'cn', t0: T.canopies + .6, t1: T.house, a: proj(V(-.8, DECK + .66 + layerY('canopies', t), PLZ)), ly: 520, idx: '07', name: 'Canopies', spec: '' });
-  label(t, { id: 'hs', t0: T.house + .7, t1: T.open - .1, a: proj(V(0, G0 + .3, .56)), ly: 1150, idx: '08', name: 'Station house', spec: 'built inside the viaduct' });
+  label(t, { id: 'hs', t0: T.house + .7, t1: T.open - .1, a: proj(V(0, G0 + .86, PZ + .09)), ly: 560, idx: '08', name: 'Station house', spec: 'right under the tracks' });
+  label(t, { id: 'sr', t0: T.house + 1.3, t1: T.open - .1, a: proj(V(1.05, G0 + .3, PZ - .19)), ly: 1270, idx: '09', name: 'Stairs at the piers', spec: 'street → station house' });
+  label(t, { id: 'up', t0: T.now + .5, t1: T.temp + .4, a: proj(V(-.32, G0 + .2, .3)), ly: 1270, idx: 'STREET LEVEL', name: 'Pedestrian underpass', spec: 'fruit · jewelry · tamales' });
   yearCard(t, 'y17', 'APRIL 21, 1917', 'opening day', T.open - .1, T.ext - .1);
   label(t, { id: 'ex', t0: T.ext + .8, t1: T.water - .1, a: proj(V(2.4, DECK + .28, PLZ)), ly: 560, idx: '1955–56', name: 'Platforms extended', spec: 'for longer trains' });
   label(t, { id: 'wt', t0: T.water + .3, t1: T.rebuild - .1, a: proj(V(-.6, DECK - .1, .3)), ly: 560, idx: 'DECADES OF WATER', name: 'Concrete crumbles', spec: 'drainage failed through the track bed', side: 'R', lx: 140 });
