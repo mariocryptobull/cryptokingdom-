@@ -1,0 +1,15 @@
+{
+  "dur": 65.0,
+  "vo": [
+    {"id": "v01", "t": 0.5,  "chunks": ["Look around.", "Phone cases, bottle caps,", "keyboard keys.", "Most of them were made", "the same way."]},
+    {"id": "v02", "t": 7.2,  "chunks": ["Injection molding.", "Pull the machine apart,", "and it has two main halves:", "an injection unit", "and a clamping unit."]},
+    {"id": "v03", "t": 14.9, "chunks": ["Plastic pellets drop", "from the hopper", "into a heated barrel."]},
+    {"id": "v04", "t": 18.7, "chunks": ["Inside, a reciprocating screw", "does two jobs.", "It turns to mix", "and melt the plastic.", "Then it slams forward", "like a plunger."]},
+    {"id": "v05", "t": 27.9, "chunks": ["The melt shoots", "through the nozzle,", "down the sprue,", "along the runners,", "and through a tiny gate", "into the cavity."]},
+    {"id": "v06", "t": 35.0, "chunks": ["The clamping unit", "holds the two mold halves shut", "against that pressure."]},
+    {"id": "v07", "t": 39.6, "chunks": ["Then comes the longest step:", "cooling.", "Water channels pull the heat out", "until the part is solid."]},
+    {"id": "v08", "t": 46.2, "chunks": ["The mold opens,", "and ejector pins", "push the part free."]},
+    {"id": "v09", "t": 50.4, "chunks": ["A typical cycle takes", "10 to 30 seconds.", "And one mold can have", "several cavities,", "so every cycle", "makes several parts."]},
+    {"id": "v10", "t": 59.3, "chunks": ["Clamp. Inject.", "Cool. Eject.", "Repeat, millions of times."]}
+  ]
+}

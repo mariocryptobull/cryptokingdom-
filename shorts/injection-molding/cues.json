@@ -1,0 +1,222 @@
+[
+ {
+  "t0": 0.46,
+  "t1": 1.404,
+  "text": "Look around."
+ },
+ {
+  "t0": 1.384,
+  "t1": 3.099,
+  "text": "Phone cases, bottle caps,"
+ },
+ {
+  "t0": 3.079,
+  "t1": 4.177,
+  "text": "keyboard keys."
+ },
+ {
+  "t0": 4.157,
+  "t1": 5.718,
+  "text": "Most of them were made"
+ },
+ {
+  "t0": 5.698,
+  "t1": 7.112,
+  "text": "the same way."
+ },
+ {
+  "t0": 7.16,
+  "t1": 8.492,
+  "text": "Injection molding."
+ },
+ {
+  "t0": 8.472,
+  "t1": 10.022,
+  "text": "Pull the machine apart,"
+ },
+ {
+  "t0": 10.002,
+  "t1": 11.698,
+  "text": "and it has two main halves:"
+ },
+ {
+  "t0": 11.678,
+  "t1": 12.937,
+  "text": "an injection unit"
+ },
+ {
+  "t0": 12.917,
+  "t1": 14.719,
+  "text": "and a clamping unit."
+ },
+ {
+  "t0": 14.86,
+  "t1": 16.072,
+  "text": "Plastic pellets drop"
+ },
+ {
+  "t0": 16.052,
+  "t1": 16.966,
+  "text": "from the hopper"
+ },
+ {
+  "t0": 16.946,
+  "t1": 18.568,
+  "text": "into a heated barrel."
+ },
+ {
+  "t0": 18.66,
+  "t1": 20.853,
+  "text": "Inside, a reciprocating screw"
+ },
+ {
+  "t0": 20.833,
+  "t1": 21.899,
+  "text": "does two jobs."
+ },
+ {
+  "t0": 21.879,
+  "t1": 23.025,
+  "text": "It turns to mix"
+ },
+ {
+  "t0": 23.005,
+  "t1": 24.554,
+  "text": "and melt the plastic."
+ },
+ {
+  "t0": 24.534,
+  "t1": 26.163,
+  "text": "Then it slams forward"
+ },
+ {
+  "t0": 26.143,
+  "t1": 27.76,
+  "text": "like a plunger."
+ },
+ {
+  "t0": 27.86,
+  "t1": 28.856,
+  "text": "The melt shoots"
+ },
+ {
+  "t0": 28.836,
+  "t1": 30.027,
+  "text": "through the nozzle,"
+ },
+ {
+  "t0": 30.007,
+  "t1": 30.938,
+  "text": "down the sprue,"
+ },
+ {
+  "t0": 30.918,
+  "t1": 32.044,
+  "text": "along the runners,"
+ },
+ {
+  "t0": 32.024,
+  "t1": 33.411,
+  "text": "and through a tiny gate"
+ },
+ {
+  "t0": 33.391,
+  "t1": 34.857,
+  "text": "into the cavity."
+ },
+ {
+  "t0": 34.96,
+  "t1": 35.996,
+  "text": "The clamping unit"
+ },
+ {
+  "t0": 35.976,
+  "t1": 37.61,
+  "text": "holds the two mold halves shut"
+ },
+ {
+  "t0": 37.59,
+  "t1": 39.335,
+  "text": "against that pressure."
+ },
+ {
+  "t0": 39.56,
+  "t1": 41.367,
+  "text": "Then comes the longest step:"
+ },
+ {
+  "t0": 41.347,
+  "t1": 42.01,
+  "text": "cooling."
+ },
+ {
+  "t0": 41.99,
+  "t1": 44.083,
+  "text": "Water channels pull the heat out"
+ },
+ {
+  "t0": 44.063,
+  "t1": 46.054,
+  "text": "until the part is solid."
+ },
+ {
+  "t0": 46.16,
+  "t1": 47.218,
+  "text": "The mold opens,"
+ },
+ {
+  "t0": 47.198,
+  "t1": 48.404,
+  "text": "and ejector pins"
+ },
+ {
+  "t0": 48.384,
+  "t1": 50.134,
+  "text": "push the part free."
+ },
+ {
+  "t0": 50.36,
+  "t1": 51.938,
+  "text": "A typical cycle takes"
+ },
+ {
+  "t0": 51.918,
+  "t1": 53.107,
+  "text": "10 to 30 seconds."
+ },
+ {
+  "t0": 53.087,
+  "t1": 54.588,
+  "text": "And one mold can have"
+ },
+ {
+  "t0": 54.568,
+  "t1": 55.913,
+  "text": "several cavities,"
+ },
+ {
+  "t0": 55.893,
+  "t1": 57.003,
+  "text": "so every cycle"
+ },
+ {
+  "t0": 56.983,
+  "t1": 58.954,
+  "text": "makes several parts."
+ },
+ {
+  "t0": 59.26,
+  "t1": 60.345,
+  "text": "Clamp. Inject."
+ },
+ {
+  "t0": 60.325,
+  "t1": 61.246,
+  "text": "Cool. Eject."
+ },
+ {
+  "t0": 61.226,
+  "t1": 63.601,
+  "text": "Repeat, millions of times."
+ }
+]
