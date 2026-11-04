@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { clamp, lerp, seg, ss, eio, eo, track } from '/core/lib.js';
 import { initOverlay, drawOverlay, overlayTexts, makeCues } from './overlay.js';
 
-const RW = 360, RH = 640, W = 1080, H = 1920;
+const RW = 270, RH = 480, W = 1080, H = 1920;   // PS1-ish internal resolution, shown at exactly 4×
 const Q = new URLSearchParams(location.search);
 const TL = await (await fetch('timeline.json')).json();
 const VDUR = await (await fetch('voice/dur.json')).json();
@@ -25,26 +25,55 @@ window.T = T;
 // ---------- renderer ----------
 const canvas = document.getElementById('gl');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, preserveDrawingBuffer: true });
-renderer.setPixelRatio(1); renderer.setSize(RW, RH, false);
+renderer.setPixelRatio(1); renderer.setSize(W, H, false);
+const rt = new THREE.WebGLRenderTarget(RW, RH, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, depthBuffer: true });
 renderer.outputColorSpace = THREE.LinearSRGBColorSpace;   // textures and colours are authored as display values
-const scene = new THREE.Scene(); scene.background = new THREE.Color('#141418');
+const scene = new THREE.Scene(); scene.background = new THREE.Color('#1b1d24');
 const camera = new THREE.PerspectiveCamera(52, RW / RH, .05, 60);
+
+// ---------- CRT / composite pass (output resolution) ----------
+const crt = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.ShaderMaterial({
+  glslVersion: THREE.GLSL3, depthTest: false, depthWrite: false,
+  uniforms: { tSrc: { value: null }, res: { value: new THREE.Vector2(RW, RH) }, time: { value: 0 } },
+  vertexShader: `out vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }`,
+  fragmentShader: `out vec4 o; in vec2 vUv; uniform sampler2D tSrc; uniform vec2 res; uniform float time;
+    vec3 px(vec2 uv){ return texture(tSrc, (floor(uv * res) + .5) / res).rgb; }
+    float h(vec2 p){ return fract(sin(dot(p, vec2(12.9898, 78.233)) + time * 7.0) * 43758.5453); }
+    void main(){
+      vec2 c = vUv - .5; c *= 1.0 + .028 * dot(c * vec2(1.0, 1.78), c * vec2(1.0, 1.78));   // mild tube curvature
+      vec2 uv = c + .5;
+      if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) { o = vec4(0.0, 0.0, 0.0, 1.0); return; }
+      float dx = .4 / res.x;
+      vec3 col = vec3(px(uv + vec2(dx, 0.0)).r, px(uv).g, px(uv - vec2(dx, 0.0)).b);       // composite colour bleed
+      col = mix(col, (px(uv - vec2(1.0 / res.x, 0.0)) + px(uv + vec2(1.0 / res.x, 0.0))) * .5, .12);
+      float line = mod(gl_FragCoord.y, 4.0) < 1.0 ? .84 : 1.0;                              // one dark output row per source row
+      col *= line;
+      col *= 1.0 - .35 * smoothstep(.35, .78, length(c * vec2(1.0, .8)));                   // vignette
+      col += (h(floor(gl_FragCoord.xy / 2.0)) - .5) * .045;                                  // grain
+      o = vec4(col, 1.0);
+    }`,
+}));
+const crtScene = new THREE.Scene(); crtScene.add(crt); const crtCam = new THREE.Camera();
 
 // ---------- PS1 material ----------
 const LIGHT = new THREE.Vector3(-.45, .8, .55).normalize();
-const SHARED = { uLight: { value: LIGHT }, uFogC: { value: new THREE.Color('#141418') }, uFog: { value: new THREE.Vector2(9, 18) } };
+const SHARED = { uLight: { value: LIGHT }, uFogC: { value: new THREE.Color('#1b1d24') }, uFog: { value: new THREE.Vector2(5.5, 13) }, uBulb: { value: new THREE.Vector3(.2, 2.55, -1.3) } };
 const VS = `
-uniform vec3 uLight; uniform float uAmb; uniform vec2 uFog;
+uniform vec3 uLight; uniform float uAmb; uniform vec2 uFog; uniform vec3 uBulb; uniform vec2 uRep;
 out vec3 vUvW; out float vShade; out float vFog;
 void main(){
   vec4 mv = modelViewMatrix * vec4(position, 1.0);
   vec4 p = projectionMatrix * mv;
-  vec2 grid = vec2(${RW / 2}.0, ${RH / 2}.0);
+  vec2 grid = vec2(${RW}.0, ${RH}.0);
   p.xy = floor(p.xy / p.w * grid + .5) / grid * p.w;          // vertex snapping (wobble)
   gl_Position = p;
-  vUvW = vec3(uv * p.w, p.w);                                 // affine texture warp (PS1 had no perspective correction)
+  vUvW = vec3(uv * uRep * p.w, p.w);                                 // affine texture warp (PS1 had no perspective correction)
   vec3 n = normalize(mat3(modelMatrix) * normal);
-  vShade = uAmb + (1.0 - uAmb) * max(dot(n, uLight), 0.0);
+  vec3 wp = (modelMatrix * vec4(position, 1.0)).xyz;
+  vec3 tb = uBulb - wp; float db = length(tb);
+  float bulb = max(dot(n, tb / db), 0.0) * 1.6 / (1.0 + db * db * .35);
+  float ground = mix(.62, 1.0, clamp(wp.y / 1.1, 0.0, 1.0));      // baked contact darkening near the floor
+  vShade = (uAmb + (1.0 - uAmb) * max(dot(n, uLight), 0.0) * .8 + bulb * .5) * ground;
   vFog = clamp((-mv.z - uFog.x) / (uFog.y - uFog.x), 0.0, 1.0);
 }`;
 const FS = `
@@ -66,7 +95,7 @@ void main(){
 function psx({ map = null, color = '#ffffff', emissive = '#000000', amb = .45, transparent = false, opacity = 1, side = THREE.FrontSide } = {}) {
   return new THREE.ShaderMaterial({
     glslVersion: THREE.GLSL3, vertexShader: VS, fragmentShader: FS, transparent, side, depthWrite: !transparent,
-    uniforms: { ...SHARED, map: { value: map }, useMap: { value: map ? 1 : 0 }, color: { value: new THREE.Color(color) }, emissive: { value: new THREE.Color(emissive) }, uAmb: { value: amb }, opacity: { value: opacity } },
+    uniforms: { ...SHARED, map: { value: map }, useMap: { value: map ? 1 : 0 }, uRep: { value: map ? map.repeat.clone() : new THREE.Vector2(1, 1) }, color: { value: new THREE.Color(color) }, emissive: { value: new THREE.Color(emissive) }, uAmb: { value: amb }, opacity: { value: opacity } },
   });
 }
 
@@ -74,6 +103,9 @@ function psx({ map = null, color = '#ffffff', emissive = '#000000', amb = .45, t
 let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
 function tex(w, h, draw, repeat = [1, 1]) {
   const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d'); draw(g, w, h);
+  const id = g.getImageData(0, 0, w, h), d = id.data, L = 12;   // posterize: ~6 levels per channel, like hand-reduced PS1 textures
+  for (let i = 0; i < d.length; i += 4) for (let k = 0; k < 3; k++) d[i + k] = Math.round(d[i + k] / 255 * (L - 1)) / (L - 1) * 255;
+  g.putImageData(id, 0, 0);
   const t = new THREE.CanvasTexture(c); t.magFilter = t.minFilter = THREE.NearestFilter; t.generateMipmaps = false;
   t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...repeat); t.colorSpace = THREE.NoColorSpace; return t;
 }
@@ -118,9 +150,13 @@ const cyl = (r1, r2, h, m, x, y, z, s = 8) => mesh(new THREE.CylinderGeometry(r1
 
 // ---------- room: a tiled corner ----------
 {
-  const back = mesh(new THREE.PlaneGeometry(16, 10), M.wall, 0, 5, -3.2); scene.add(back);
-  const left = mesh(new THREE.PlaneGeometry(16, 10), M.wall, -3.2, 5, 0); left.rotation.y = Math.PI / 2; scene.add(left);
-  const fl = mesh(new THREE.PlaneGeometry(16, 16), M.floor, 0, 0, 0); fl.rotation.x = -Math.PI / 2; scene.add(fl);
+  const back = mesh(new THREE.PlaneGeometry(16, 10, 12, 8), M.wall, 0, 5, -3.2); scene.add(back);
+  const left = mesh(new THREE.PlaneGeometry(16, 10, 12, 8), M.wall, -3.2, 5, 0); left.rotation.y = Math.PI / 2; scene.add(left);
+  const fl = mesh(new THREE.PlaneGeometry(16, 16, 12, 12), M.floor, 0, 0, 0); fl.rotation.x = -Math.PI / 2; scene.add(fl);
+}
+{
+  scene.add(boxM(16, .14, .04, psx({ color: '#3a3430' }), 0, .07, -3.17)); const bb = boxM(.04, .14, 16, psx({ color: '#3a3430' }), -3.17, .07, 0); scene.add(bb);
+  scene.add(cyl(.008, .008, .5, psx({ color: '#111' }), .2, 2.85, -1.3, 4), mesh(new THREE.IcosahedronGeometry(.06, 0), psx({ color: '#000', emissive: '#fff2c4', amb: 0 }), .2, 2.57, -1.3));
 }
 // pedestal crate
 const B = new THREE.Vector3(.55, .8, -1.25);
@@ -225,14 +261,15 @@ window.EV = EV.sort((a, b) => a.t - b.t); window.DUR = DUR;
 
 // ---------- frame ----------
 await initOverlay(CUES);
-window.render = t => {
+window.render = (t) => {
   // turbo explode (top first) and rotor spin
   const e = explodeE(t);
   CH.position.y = 1.25 * e; MID.position.y = .55 * e;
   rotor.rotation.y = spinAngle(t);
   const sys = seg(t, T.assemble + .4, T.assemble + 1.2);
   for (const p of plumbing) p.visible = sys > .5;
-  // cat
+  // cat: posed on twos (12 fps) like hand-keyed PS1 animation; camera and particles stay at 24
+  { const t0 = t; t = Math.floor(t * 12) / 12;
   const bob = Math.sin(t * 2.2) * .012;
   body.position.y = bob; body.scale.setScalar(1);
   const puff = t > T.boost - .1 ? Math.max(0, Math.sin(clamp((t - T.boost + .1) / .9) * Math.PI)) : 0;
@@ -248,6 +285,7 @@ window.render = t => {
   tail.forEach((g, i) => { g.rotation.x = -.25 + Math.sin(t * 2.6 - i * .6) * .18; g.rotation.z = Math.sin(t * 1.7 - i * .5) * .2; });
   const blink = (t % 3.3) < .12 || (t > T.outro + 2.6 && t < T.outro + 3.0);
   M.face.uniforms.map.value = blink ? FACE.blink : (t > T.power - .2 && t < T.power + 1.6) || (t > T.boost && t < T.boost + 1.2) ? FACE.wide : FACE.open;
+  t = t0; }
   // flows
   const exOn = seg(t, T.exhaust - .2, T.exhaust + .3);
   const exPath = u => u < .45 ? C.exhaust.getPointAt(u / .45) : tAt((u - .45) / .55, B.y + .17, .4, .08, 1.4, B.x, B.z, -.6);
@@ -262,7 +300,8 @@ window.render = t => {
   const pw = .6 + .9 * seg(t, T.power - .6, T.power);
   flames.forEach((f, i) => { const on = t > T.engine && Math.sin(t * 26 + i * 1.9) > .3; f.visible = on; f.scale.set(pw, pw * (1 + Math.sin(t * 40 + i)), pw); });
   setCamera(t);
-  renderer.render(scene, camera);
+  renderer.setRenderTarget(rt); renderer.render(scene, camera);
+  renderer.setRenderTarget(null); crt.material.uniforms.tSrc.value = rt.texture; crt.material.uniforms.time.value = t; renderer.render(crtScene, crtCam);
   drawOverlay(t, camera, { W, H, T, B, MID, CH, rotor, tWheel, cWheel, engine, icool, C, cat, head });
 };
 window.TEXTS = () => overlayTexts();
