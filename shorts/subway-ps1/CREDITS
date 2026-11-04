@@ -1,0 +1,18 @@
+How NYC's Subway Became One — PS1-style short with mascot cat (1080×1920, 73 s)
+
+Made in code: no AI-generated video, no stock footage. The map, lines, trains and cat are an illustrative low-poly model built in three.js (rendered at 360×640, scaled up).
+Facts and sources: FACTS.md.
+
+TOOLS
+- Lemo-Opuscar film-style library (core render and audio tools; custom PS1 look) — https://github.com/lemomo-ai/lemo-opuscar — MIT
+- three.js r170 — MIT
+
+
+FONTS (SIL Open Font License 1.1, texts in fonts/)
+- Pixelify Sans — The Pixelify Sans Project Authors
+
+MUSIC AND SOUND
+- Original score and foley, synthesised in code (mix.py). No samples.
+
+VOICE
+- Kokoro-82M (hexgrad), voice am_michael, Apache License 2.0; run locally via kokoro-onnx (MIT).
