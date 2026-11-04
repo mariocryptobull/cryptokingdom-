@@ -1,0 +1,106 @@
+{
+ "dur": 63.0,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "Every floor has to send",
+    "its weight somewhere.",
+    "So which beams",
+    "actually feel this cat?"
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 6.1,
+   "chunks": [
+    "The piece of floor",
+    "each beam carries",
+    "is called its TRIBUTARY AREA."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 11.0,
+   "chunks": [
+    "First, check the panel's shape.",
+    "Divide the long side",
+    "by the short side."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 16.0,
+   "chunks": [
+    "18 by 6 is a ratio of 3.",
+    "More than 2",
+    "means a ONE-WAY slab."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 21.8,
+   "chunks": [
+    "The load runs straight across",
+    "to the two long beams.",
+    "Each one carries",
+    "half the short span:",
+    "a uniform load."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 29.9,
+   "chunks": [
+    "Now squish it closer to square.",
+    "12 by 9 is about 1.3.",
+    "2 or less",
+    "means TWO-WAY."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 37.4,
+   "chunks": [
+    "Draw 45\u00b0 lines",
+    "from every corner.",
+    "Now the load flows",
+    "to all four edges."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 44.2,
+   "chunks": [
+    "The short beams get triangles.",
+    "The long beams get trapezoids."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 49.3,
+   "chunks": [
+    "Same floor,",
+    "same load per square foot.",
+    "Just a different shape,",
+    "and a different load path."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 55.3,
+   "chunks": [
+    "Long and skinny: one way.",
+    "Close to square: two ways."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 59.4,
+   "chunks": [
+    "Follow for the next teardown."
+   ]
+  }
+ ]
+}
