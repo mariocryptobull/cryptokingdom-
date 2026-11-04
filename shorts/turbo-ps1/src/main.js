@@ -216,6 +216,7 @@ const PX = { exh: mkParts(M.exh), airIn: mkParts(M.airHot), hot: mkParts(M.airHo
 PX.airIn.forEach(m => m.material = M.airCold);
 
 // ---------- motion ----------
+const HEAD_SPINS = [[cue('v04', 2) + .1, 1, .9], [T.boost + .15, 2, 1.1], [T.outro + 1.2, 1, .8]];   // "same spin", BOOST, outro
 const explodeE = t => eo(seg(t, T.explode, T.explode + .7)) * (1 - eio(seg(t, T.assemble, T.assemble + .8)));
 function spinAngle(t) { let a = 0; for (let x = T.spin; x < t; x += 1 / 48) a += (seg(x, T.spin, T.spin + 1.2) * 10 + seg(x, T.boost - .5, T.boost + .5) * 8) / 48; return a; }
 function flow(parts, crv, t, on, speed = .45, phase = 0, swirl = null) {
@@ -277,6 +278,8 @@ window.render = (t) => {
   const jump = Math.max(0, Math.sin(clamp((t - T.power) / .6) * Math.PI)) * .25; cat.position.y = jump;
   const look = t < T.explode - .5 ? .2 : t < T.assemble ? .55 : -.1;
   head.rotation.y = look * ss(seg(t, 1, 2)) + Math.sin(t * .9) * .06;
+  // signature move: full owl-style head spins on cue (deterministic: each spin is a function of t only)
+  for (const [t0, turns, dur] of HEAD_SPINS) head.rotation.y += Math.PI * 2 * turns * eio(seg(t, t0, t0 + dur));
   head.rotation.z = Math.sin(t * 1.3) * .05 + .12 * Math.sin(clamp((t - 3.6) / .5) * Math.PI);   // the head tilt
   const nope = t > T.notFree && t < T.notFree + 1.2 ? Math.sin((t - T.notFree) * 18) * .35 * (1 - (t - T.notFree) / 1.2) : 0;
   head.rotation.y += nope;
