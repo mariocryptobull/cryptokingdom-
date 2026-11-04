@@ -1,5 +1,5 @@
 {
- "dur": 65.5,
+ "dur": 73.5,
  "vo": [
   {
    "id": "v01",
@@ -13,7 +13,7 @@
   },
   {
    "id": "v02",
-   "t": 5.78,
+   "t": 6.43,
    "chunks": [
     "Think of it as",
     "a factory on rails:",
@@ -23,7 +23,7 @@
   },
   {
    "id": "v03",
-   "t": 11.64,
+   "t": 13.26,
    "chunks": [
     "The cutterhead spins",
     "a few times a minute.",
@@ -33,7 +33,7 @@
   },
   {
    "id": "v04",
-   "t": 17.81,
+   "t": 20.26,
    "chunks": [
     "In soft ground,",
     "pressurized soil or slurry",
@@ -43,7 +43,7 @@
   },
   {
    "id": "v05",
-   "t": 23.56,
+   "t": 26.56,
    "chunks": [
     "Behind the cutterhead,",
     "a steel shield",
@@ -53,7 +53,7 @@
   },
   {
    "id": "v06",
-   "t": 28.64,
+   "t": 32.17,
    "chunks": [
     "The broken rock, called muck,",
     "is scooped up,",
@@ -63,7 +63,7 @@
   },
   {
    "id": "v07",
-   "t": 34.77,
+   "t": 38.98,
    "chunks": [
     "Now the clever part.",
     "A robotic arm sets",
@@ -73,7 +73,7 @@
   },
   {
    "id": "v08",
-   "t": 41.82,
+   "t": 47.36,
    "chunks": [
     "Hydraulic rams push off",
     "that fresh ring",
@@ -83,7 +83,7 @@
   },
   {
    "id": "v09",
-   "t": 47.98,
+   "t": 54.62,
    "chunks": [
     "Cut, muck, ring, push.",
     "Repeat, around the clock."
@@ -91,7 +91,7 @@
   },
   {
    "id": "v10",
-   "t": 52.7,
+   "t": 59.69,
    "chunks": [
     "New York's Second Avenue Subway machine",
     "was 450 feet long,",
@@ -101,7 +101,7 @@
   },
   {
    "id": "v11",
-   "t": 60.27,
+   "t": 68.06,
    "chunks": [
     "Congrats! You've discovered",
     "the tunnel boring machine."
