@@ -82,7 +82,7 @@ export function drawOverlay(t, cam, c) {
   label(t, { id: 'gd', t0: T.girders + .5, t1: T.tracks + .1, a: proj(V(1.2, DECK + .05 + layerY('girders', t), .66)), ly: 520, idx: '04', name: 'Steel girders', spec: 'carry the deck' });
   label(t, { id: 'tk', t0: T.tracks + .7, t1: T.station, a: proj(V(.6, RAIL_Y + layerY('tracks', t), 0)), ly: 480, idx: '05', name: '3 tracks', spec: 'local · express · local' });
   label(t, { id: 'pl', t0: T.platforms + .7, t1: T.canopies + .2, a: proj(V(.9, DECK + .24 + layerY('platforms', t), PLZ)), ly: 1150, idx: '06', name: 'Side platforms', spec: 'one per direction' });
-  label(t, { id: 'cn', t0: T.canopies + .6, t1: T.house, a: proj(V(-.8, DECK + .66 + layerY('canopies', t), PLZ)), ly: 520, idx: '07', name: 'Canopies', spec: '' });
+  label(t, { id: 'cn', t0: T.canopies + .6, t1: T.house, a: proj(V(-.8, DECK + .66 + layerY('canopies', t), PLZ)), ly: 520, idx: '07', name: 'Concrete walls', spec: 'steel canopy roof on top' });
   label(t, { id: 'hs', t0: T.house + .7, t1: T.open - .1, a: proj(V(0, G0 + .86, PZ + .09)), ly: 560, idx: '08', name: 'Station house', spec: 'right under the tracks' });
   label(t, { id: 'sr', t0: T.house + 1.3, t1: T.open - .1, a: proj(V(1.05, G0 + .3, PZ - .19)), ly: 1270, idx: '09', name: 'Stairs at the piers', spec: 'street → station house' });
   label(t, { id: 'up', t0: T.now + .5, t1: T.temp + .4, a: proj(V(-.32, G0 + .2, .3)), ly: 1270, idx: 'STREET LEVEL', name: 'Pedestrian underpass', spec: 'fruit · jewelry · tamales' });

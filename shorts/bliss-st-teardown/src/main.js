@@ -77,7 +77,8 @@ const M = {
   plat: new THREE.MeshPhysicalMaterial({ color: '#c4bdb0', roughness: .8 }),
   edge: new THREE.MeshPhysicalMaterial({ color: '#f2c230', roughness: .5, emissive: '#f2c230', emissiveIntensity: .1 }),
   canopyOld: new THREE.MeshPhysicalMaterial({ color: '#2f5d4a', roughness: .5, clearcoat: .3 }),
-  canopyNew: new THREE.MeshPhysicalMaterial({ color: '#8e979f', roughness: .3, metalness: .6, clearcoat: .5 }),
+  canopyNew: new THREE.MeshPhysicalMaterial({ color: '#3f6e58', roughness: .35, metalness: .45, clearcoat: .5 }),
+  wallWin: new THREE.MeshPhysicalMaterial({ color: '#4f6d68', roughness: .15, metalness: .2, clearcoat: 1, emissive: '#9fc8b8', emissiveIntensity: .12 }),
   house: new THREE.MeshPhysicalMaterial({ color: '#c9c1b2', roughness: .8 }),
   window: new THREE.MeshPhysicalMaterial({ color: '#2a3a48', roughness: .1, metalness: .2, emissive: '#ffd9a0', emissiveIntensity: .25, clearcoat: 1 }),
   wood: new THREE.MeshPhysicalMaterial({ color: '#b0855a', roughness: .75, transparent: true, opacity: .9 }),
@@ -161,6 +162,16 @@ const RAIL_Y = DECK + .18 + .035;
 { const g = layer('tracks', 4.25), r = [], ti = []; for (const z of TRK) { for (const dz of [-.075, .075]) r.push(boxG(LEN, .025, .018, 0, RAIL_Y, z + dz)); for (let x = -3.6; x <= 3.6; x += .14) ti.push(boxG(.05, .02, .24, x, RAIL_Y - .022, z)); } g.add(merged(r, M.rail), merged(ti, M.tie)); }
 // platforms (scaled along x for the 1950s extension)
 const plats = [];
+// platform-level enclosure: concrete walls along both outer edges with green-framed windows + tile panels (roof = the canopies)
+const WZ = DW / 2 - .03, WALL_L = 3.5, WALL_Y0 = DECK + .18, WALL_Y1 = DECK + .62;
+{ const g = layer('walls', 5.6), h = WALL_Y1 - WALL_Y0, wy = DECK + .42, geos = [], fr = [], win = [], tl = [];
+  for (const s of [-1, 1]) {
+    geos.push(boxG(WALL_L, h, .05, 0, WALL_Y0 + h / 2, s * WZ), boxG(WALL_L + .04, .03, .07, 0, WALL_Y1 + .015, s * WZ));
+    for (let i = 0; i < 4; i++) { const x = -1.05 + i * .7; fr.push(boxG(.46, .24, .01, x, wy, s * (WZ + .027))); win.push(boxG(.42, .2, .01, x, wy, s * (WZ + .031))); }
+    for (let i = 0; i < 5; i++) { const x = -1.4 + i * .7; if (Math.abs(x) > 1.6) continue; tl.push(boxG(.12, .07, .006, x, wy, s * (WZ + .028))); }
+    tl.push(boxG(WALL_L, .03, .006, 0, WALL_Y0 + .06, s * (WZ + .028)));
+  }
+  g.add(merged(geos, M.conc), merged(fr, M.canopyOld), merged(win, M.wallWin), merged(tl, M.tile)); }
 { const g = layer('platforms', 4.75); for (const s of [-1, 1]) { const p = new THREE.Group(); p.position.set(0, 0, s * PLZ); g.add(p); p.add(box(1, .1, PLW, M.plat, 0, DECK + .23, 0)); p.add(box(1, .012, .04, M.edge, 0, DECK + .286, -s * (PLW / 2 - .02))); plats.push(p); } }
 // canopies (old green 1917 → new 1990s) + stained-glass windscreens
 const canopies = { old: [], neu: [] }, glass = [];
@@ -174,7 +185,7 @@ const canopies = { old: [], neu: [] }, glass = [];
     else { const r = box(3.5, .02, .4, mat, 0, DECK + .64, 0); r.rotation.x = -s * .12; c.add(r); }
     canopies[kind].push(c);
   }
-  for (const s of [-1, 1]) for (let i = 0; i < 4; i++) { const p = box(.42, .2, .008, M.glass, -1.05 + i * .7, DECK + .38, s * (PLZ + PLW / 2 + .01)); g.add(p); glass.push(p); }
+  for (const s of [-1, 1]) for (let i = 0; i < 4; i++) { const p = box(.42, .2, .008, M.glass, -1.05 + i * .7, DECK + .42, s * (WZ + .037)); g.add(p); glass.push(p); }
 }
 // station house: an enclosed mezzanine filling the centre bay right under the tracks; open pedestrian underpass below
 const MZ = G0 + .6, HW = 1.02;               // mezzanine floor, bay width between bents
@@ -244,7 +255,7 @@ for (const s of [-1, 1]) { const e = new THREE.Group(); e.position.set(2.15, G0,
 // ---------- motion ----------
 const pop = x => 1 - Math.pow(1 - ss(x), 3);
 const explodeK = t => pop(seg(t, T.explode - .1, T.explode + 1.5));
-const LAND = { footings: T.footings + .1, piers: T.piers, arches: T.arches + .1, girders: T.girders, deck: T.girders + .7, tracks: T.tracks, platforms: T.platforms, canopies: T.canopies, house: T.house };
+const LAND = { footings: T.footings + .1, piers: T.piers, arches: T.arches + .1, girders: T.girders, deck: T.girders + .7, tracks: T.tracks, platforms: T.platforms, walls: T.canopies - .15, canopies: T.canopies, house: T.house };
 const landK = (n, t) => eio(seg(t, LAND[n], LAND[n] + .85));
 const layerY = (n, t) => L[n].off * explodeK(t) * (1 - landK(n, t)) + (1 - landK(n, t)) * explodeK(t) * .03 * Math.sin(t * 2 + L[n].off);
 const pourK = t => ss(seg(t, T.piers + .7, T.clock + .6));
@@ -266,7 +277,7 @@ const CAMK = [
   [T.tracks + 1.0, 30, 22, 12, 0, 2.2, 0],
   [T.platforms + .6, 22, 26, 8.6, 0, 1.7, .2],
   [T.house + .4, 52, 8, 8.4, 0, .9, 0],
-  [T.open + .6, 26, 14, 8.4, .2, 1.4, .3],
+  [T.open + .6, 26, 34, 8.6, .2, 1.6, .3],
   [T.ext + 1.2, 18, 30, 9.6, 0, 1.4, 0],
   [T.water + .6, 40, 6, 7.4, -.4, 1.0, 0],
   [T.crumble + .8, 48, 4, 7.6, -.2, .9, 0],
