@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "This little metal snail can make an engine way stronger. And it runs on the engine's own exhaust."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Let's take it apart."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Hot exhaust blasts through the turbine side and spins the turbine wheel."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "A shared shaft connects it to the compressor wheel. Same shaft, same spin."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "The compressor crams fresh air into the engine at higher pressure. That extra pressure is called boost."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "But squeezing air heats it up, and hot air is less dense. So it goes through an intercooler first."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Cooler, denser air means more air packed into every cylinder."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "More air lets the engine burn more fuel. More fuel, more power."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "It's not free power, though. Some of the engine's output goes into driving the turbo."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Exhaust in. Boost out. That's a turbo."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Follow for the next teardown."
+ }
+]
