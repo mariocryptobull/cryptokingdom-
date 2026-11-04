@@ -54,7 +54,7 @@ const crtScene = new THREE.Scene(); crtScene.add(crt); const crtCam = new THREE.
 
 // ---------- PS1 material ----------
 const LIGHT = new THREE.Vector3(-.45, .8, .55).normalize();
-const SHARED = { uLight: { value: LIGHT }, uFogC: { value: new THREE.Color('#0d1424') }, uFog: { value: new THREE.Vector2(6.5, 13) }, uBulb: { value: new THREE.Vector3(1.0, 3.6, -.4) } };
+const SHARED = { uLight: { value: LIGHT }, uFogC: { value: new THREE.Color('#0d1424') }, uFog: { value: new THREE.Vector2(7.5, 16) }, uBulb: { value: new THREE.Vector3(1.0, 3.6, -.4) } };
 const VS = `
 uniform vec3 uLight; uniform float uAmb; uniform vec2 uFog; uniform vec3 uBulb; uniform vec2 uRep;
 out vec3 vUvW; out float vShade; out float vFog;
@@ -170,6 +170,23 @@ for (const [k, pts] of Object.entries(BORO)) {
   const m = new THREE.Mesh(g, psx({ map: TX.land, color: LANDC[k], amb: .9 })); m.position.y = TY; map.add(m);
 }
 const LY = TY + .085;
+// the rest of the region: flat green land (schematic), slightly lower than the boroughs
+{
+  const greenT = tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [92, 140, 78], 18); g.fillStyle = 'rgba(60,100,50,.6)'; for (let i = 0; i < 10; i++) g.fillRect(rnd() * w, rnd() * h, 2, 1); }, [14, 14]);
+  const REGION = {
+    mainland: [[-12, -14], [-.55, -14], [-.5, -3.6], [-.45, -2.6], [-.55, -1.3], [-.6, .2], [-.55, 1.4], [-.9, 2.2], [-1.5, 2.6], [-12, 3.0]],   // New Jersey + upstate, west of the Hudson
+    north: [[-.4, -14], [14, -14], [14, -3.6], [2.4, -3.0], [1.6, -3.55], [.4, -3.5], [-.35, -3.0]],                                        // Westchester / Connecticut, north of the Bronx
+    longIsland: [[3.05, -1.4], [14, -2.6], [14, 1.9], [3.0, 1.75], [3.3, .3], [3.4, -.6]],                                                     // Long Island, east of Queens + Brooklyn
+    staten: [[-1.2, 2.75], [-.35, 2.55], [-.15, 3.2], [-.55, 3.85], [-1.35, 3.6]],                                                            // Staten Island
+  };
+  const greenM = psx({ map: greenT, amb: .8 });
+  for (const pts of Object.values(REGION)) {
+    const sh = new THREE.Shape(); sh.moveTo(pts[0][0], -pts[0][1]); for (const p of pts.slice(1)) sh.lineTo(p[0], -p[1]); sh.closePath();
+    const g = new THREE.ExtrudeGeometry(sh, { depth: .045, bevelEnabled: false }); g.rotateX(-Math.PI / 2);
+    const uv = g.attributes.uv; for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) / 4, uv.getY(i) / 4);
+    const m = new THREE.Mesh(g, greenM); m.position.y = TY; map.add(m);
+  }
+}
 {
   const winT = tex(8, 16, (g, w, h) => { g.fillStyle = '#2a2f3c'; g.fillRect(0, 0, w, h); g.fillStyle = '#566070'; g.fillRect(0, 0, w, 1); for (let y = 2; y < h; y += 3) for (let x = 1; x < w; x += 3) { g.fillStyle = rnd() > .45 ? '#ffd98a' : '#3b4252'; g.fillRect(x, y, 1, 2); } });
   const inside = (pts, x, z) => { let c = false; for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) { const [xi, zi] = pts[i], [xj, zj] = pts[j]; if ((zi > z) !== (zj > z) && x < (xj - xi) * (z - zi) / (zj - zi) + xi) c = !c; } return c; };
