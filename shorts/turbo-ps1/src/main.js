@@ -276,7 +276,7 @@ window.render = (t) => {
   body.scale.set(1 + .28 * puff, 1 + .18 * puff, 1 + .28 * puff);
   const jump = Math.max(0, Math.sin(clamp((t - T.power) / .6) * Math.PI)) * .25; cat.position.y = jump;
   const look = t < T.explode - .5 ? .2 : t < T.assemble ? .55 : -.1;
-  head.rotation.y = lerp(head.rotation.y, 0, 0) + look * ss(seg(t, 1, 2)) + Math.sin(t * .9) * .06;
+  head.rotation.y = look * ss(seg(t, 1, 2)) + Math.sin(t * .9) * .06;
   head.rotation.z = Math.sin(t * 1.3) * .05 + .12 * Math.sin(clamp((t - 3.6) / .5) * Math.PI);   // the head tilt
   const nope = t > T.notFree && t < T.notFree + 1.2 ? Math.sin((t - T.notFree) * 18) * .35 * (1 - (t - T.notFree) / 1.2) : 0;
   head.rotation.y += nope;
