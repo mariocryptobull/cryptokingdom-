@@ -25,7 +25,7 @@ const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, preserveDra
 renderer.setPixelRatio(1); renderer.setSize(W, HH, false);
 const rt = new THREE.WebGLRenderTarget(RW, RH, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, depthBuffer: true });
 renderer.outputColorSpace = THREE.LinearSRGBColorSpace;   // textures and colours are authored as display values
-const scene = new THREE.Scene(); scene.background = new THREE.Color('#1b1d24');
+const scene = new THREE.Scene(); scene.background = new THREE.Color('#0d1424');
 const camera = new THREE.PerspectiveCamera(52, RW / RH, .05, 60);
 
 // ---------- CRT / composite pass (output resolution) ----------
@@ -54,7 +54,7 @@ const crtScene = new THREE.Scene(); crtScene.add(crt); const crtCam = new THREE.
 
 // ---------- PS1 material ----------
 const LIGHT = new THREE.Vector3(-.45, .8, .55).normalize();
-const SHARED = { uLight: { value: LIGHT }, uFogC: { value: new THREE.Color('#1b1d24') }, uFog: { value: new THREE.Vector2(7.5, 16) }, uBulb: { value: new THREE.Vector3(1.0, 3.6, -.4) } };
+const SHARED = { uLight: { value: LIGHT }, uFogC: { value: new THREE.Color('#0d1424') }, uFog: { value: new THREE.Vector2(6.5, 13) }, uBulb: { value: new THREE.Vector3(1.0, 3.6, -.4) } };
 const VS = `
 uniform vec3 uLight; uniform float uAmb; uniform vec2 uFog; uniform vec3 uBulb; uniform vec2 uRep;
 out vec3 vUvW; out float vShade; out float vFog;
@@ -110,8 +110,8 @@ const noiseFill = (g, w, h, base, amt) => { for (let y = 0; y < h; y++) for (let
 const TX = {
   wall: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [96, 102, 116], 14); g.fillStyle = '#d8dce4'; g.fillRect(0, 0, w, 2); g.fillRect(0, 0, 2, h); }, [28, 18]),
   floor: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [78, 98, 86], 26); for (let i = 0; i < 12; i++) { g.fillStyle = `rgba(30,40,34,${rnd() * .5})`; g.fillRect(rnd() * w, rnd() * h, 2, 1); } g.fillStyle = '#b7bdb2'; g.fillRect(0, 0, w, 2); g.fillRect(0, 0, 2, h); }, [20, 20]),
-  water: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [52, 92, 140], 18); g.fillStyle = 'rgba(160,200,240,.5)'; for (let i = 0; i < 5; i++) g.fillRect(rnd() * w, rnd() * h, 3, 1); }, [10, 10]),
-  land: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [150, 160, 120], 26); g.fillStyle = 'rgba(80,90,70,.5)'; for (let x = 0; x < w; x += 4) g.fillRect(x, 0, 1, h); for (let y = 0; y < h; y += 4) g.fillRect(0, y, w, 1); }, [3, 3]),
+  water: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [52, 92, 140], 18); g.fillStyle = 'rgba(160,200,240,.5)'; for (let i = 0; i < 5; i++) g.fillRect(rnd() * w, rnd() * h, 3, 1); }, [60, 60]),
+  land: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [84, 88, 96], 8); g.fillStyle = '#b8b4a4'; g.fillRect(0, 0, 2, h); g.fillRect(8, 0, 1, h); g.fillRect(0, 0, w, 2); }, [6, 6]),
   concrete: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [158, 156, 150], 30); for (let i = 0; i < 6; i++) { g.fillStyle = 'rgba(90,88,84,.6)'; g.fillRect(rnd() * w, rnd() * h, 1, 1); } }, [6, 18]),
   crate: tex(32, 32, (g, w, h) => { noiseFill(g, w, h, [142, 104, 62], 30); g.fillStyle = '#5b3d1f'; for (const y of [0, 15, 30]) g.fillRect(0, y, w, 2); g.fillRect(0, 0, 2, h); g.fillRect(30, 0, 2, h); }),
   iron: tex(16, 16, (g, w, h) => { noiseFill(g, w, h, [88, 70, 60], 40); }),
@@ -150,32 +150,43 @@ const cyl = (r1, r2, h, m, x, y, z, s = 8) => mesh(new THREE.CylinderGeometry(r1
 
 // ---------- room: a tiled corner ----------
 {
-  const back = mesh(new THREE.PlaneGeometry(16, 10, 12, 8), M.wall, 0, 5, -4.6); scene.add(back);
-  const left = mesh(new THREE.PlaneGeometry(16, 10, 12, 8), M.wall, -3.4, 5, 0); left.rotation.y = Math.PI / 2; scene.add(left);
-  const fl = mesh(new THREE.PlaneGeometry(16, 16, 12, 12), M.floor, 0, 0, 0); fl.rotation.x = -Math.PI / 2; scene.add(fl);
 }
 {
-  scene.add(boxM(16, .14, .04, psx({ color: '#3a3430' }), 0, .07, -4.57)); const bb = boxM(.04, .14, 16, psx({ color: '#3a3430' }), -3.37, .07, 0); scene.add(bb);
-  scene.add(cyl(.008, .008, .9, psx({ color: '#111' }), .9, 4.05, -.4, 4), mesh(new THREE.IcosahedronGeometry(.08, 0), psx({ color: '#000', emissive: '#fff2c4', amb: 0 }), 1.0, 3.6, -.4));
 }
 // ---------- NYC map diorama on a low table (map plane: x east, z south; schematic, not to scale) ----------
 const TY = .45;                                         // table top
 const map = new THREE.Group(); map.position.set(-.9, 0, -.6); scene.add(map);
-map.add(boxM(5.4, TY, 7.2, M.table, 1.1, TY / 2, -.4));
-const water = mesh(new THREE.PlaneGeometry(5.2, 7.0, 8, 10), M.water, 1.1, TY + .005, -.4); water.rotation.x = -Math.PI / 2; map.add(water);
+const water = mesh(new THREE.PlaneGeometry(40, 40, 24, 24), M.water, 1.1, TY + .005, -.4); water.rotation.x = -Math.PI / 2; map.add(water);
 const BORO = {
   Manhattan: [[-.15, -2.3], [.15, -2.25], [.35, -1.2], [.45, -.2], [.3, .9], [.05, 1.2], [-.15, .95], [-.2, -.2], [-.3, -1.3]],
   Bronx: [[-.1, -2.6], [.3, -3.3], [1.5, -3.4], [2.1, -2.7], [1.2, -2.15], [.4, -2.3]],
   Queens: [[.75, -1.95], [2.75, -2.05], [3.2, -.6], [2.95, .55], [1.65, .65], [1.0, .28], [.68, -.6]],
   Brooklyn: [[.48, .62], [1.0, .38], [1.65, .78], [2.95, .66], [2.7, 1.95], [1.45, 2.55], [.5, 2.35], [.22, 1.6]],
 };
-const LANDC = { Manhattan: '#fff6d8', Bronx: '#e2f2c2', Queens: '#eaf5c6', Brooklyn: '#fbe9c0' };
+const LANDC = { Manhattan: '#ffffff', Bronx: '#e4f0d8', Queens: '#eef2dc', Brooklyn: '#f6ecd8' };
 for (const [k, pts] of Object.entries(BORO)) {
   const s = new THREE.Shape(); s.moveTo(pts[0][0], -pts[0][1]); for (const p of pts.slice(1)) s.lineTo(p[0], -p[1]); s.closePath();
   const g = new THREE.ExtrudeGeometry(s, { depth: .07, bevelEnabled: false }); g.rotateX(-Math.PI / 2);
   const m = new THREE.Mesh(g, psx({ map: TX.land, color: LANDC[k], amb: .9 })); m.position.y = TY; map.add(m);
 }
 const LY = TY + .085;
+{
+  const winT = tex(8, 16, (g, w, h) => { g.fillStyle = '#2a2f3c'; g.fillRect(0, 0, w, h); g.fillStyle = '#566070'; g.fillRect(0, 0, w, 1); for (let y = 2; y < h; y += 3) for (let x = 1; x < w; x += 3) { g.fillStyle = rnd() > .45 ? '#ffd98a' : '#3b4252'; g.fillRect(x, y, 1, 2); } });
+  const inside = (pts, x, z) => { let c = false; for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) { const [xi, zi] = pts[i], [xj, zj] = pts[j]; if ((zi > z) !== (zj > z) && x < (xj - xi) * (z - zi) / (zj - zi) + xi) c = !c; } return c; };
+  const H0 = { Manhattan: [.12, .6], Bronx: [.05, .16], Queens: [.04, .14], Brooklyn: [.04, .15] };
+  let r = 12345; const R = () => (r = (r * 16807) % 2147483647) / 2147483647;
+  const geos = [];
+  for (const [k, pts] of Object.entries(BORO)) {
+    const xs = pts.map(p => p[0]), zs = pts.map(p => p[1]), step = k === 'Manhattan' ? .11 : .16;
+    for (let x = Math.min(...xs); x < Math.max(...xs); x += step) for (let z = Math.min(...zs); z < Math.max(...zs); z += step) {
+      const jx = x + (R() - .5) * .05, jz = z + (R() - .5) * .05; if (!inside(pts, jx, jz) || R() < .35) continue;
+      const [h0, h1] = H0[k]; const hgt = h0 + (h1 - h0) * Math.pow(R(), k === 'Manhattan' ? 1.6 : 2.2) * (k === 'Manhattan' ? (1.1 - Math.abs(jz + .4) / 2.2) : 1);
+      const sz = step * (.45 + R() * .3); const g = new THREE.BoxGeometry(sz, Math.max(hgt, .03), sz); { const uv = g.attributes.uv; for (let v = 8; v < 16; v++) uv.setXY(v, .5, .985); uv.setY; } g.translate(jx, TY + .07 + Math.max(hgt, .03) / 2, jz); geos.push(g);
+    }
+  }
+  const BGU = await import('three/addons/utils/BufferGeometryUtils.js');
+  const city = new THREE.Mesh(BGU.mergeGeometries(geos), psx({ map: winT, amb: .75 })); map.add(city);
+}
 const P = pts => new THREE.CatmullRomCurve3(pts.map(([x, z]) => new THREE.Vector3(x, LY, z)), false, 'catmullrom', .2);
 const LINES = {
   irt: { col: '#e8402e', paths: [[[.05, 1.0], [.15, .2], [.2, -.8], [.1, -1.8], [.2, -2.4], [.6, -2.95]], [[.05, 1.0], [.5, 1.1], [.95, 1.4], [1.45, 1.65]]] },
@@ -184,21 +195,21 @@ const LINES = {
   ibx: { col: '#b04ae8', paths: [[[.62, 2.05], [1.2, 1.62], [1.68, 1.12], [1.92, .6], [1.82, .02], [1.52, -.6], [1.3, -1.12]]] },
 };
 for (const L of Object.values(LINES)) {
-  L.mat = psx({ color: '#000', emissive: L.col, amb: 0 });
-  L.tubes = L.paths.map(p => { const c = P(p); const g = new THREE.TubeGeometry(c, 60, .035, 4); const m = new THREE.Mesh(g, L.mat); m.userData = { curve: c, count: g.index.count }; map.add(m); return m; });
-  L.trains = L.paths.map((p, i) => { const tr = new THREE.Group(); for (let k = 0; k < 3; k++) tr.add(boxM(.13, .07, .07, psx({ color: L.col, amb: .6 }), -k * .14, .04, 0)); map.add(tr); return tr; });
+  L.mat = psx({ color: '#000', emissive: L.col, amb: 0 }); L.mat.depthTest = false;
+  L.tubes = L.paths.map(p => { const c = P(p); const g = new THREE.TubeGeometry(c, 60, .035, 4); const m = new THREE.Mesh(g, L.mat); m.renderOrder = 10; m.userData = { curve: c, count: g.index.count }; map.add(m); return m; });
+  L.trains = L.paths.map((p, i) => { const tr = new THREE.Group(); for (let k = 0; k < 3; k++) { const tm = psx({ color: L.col, amb: .6 }); tm.depthTest = false; const b = boxM(.13, .07, .07, tm, -k * .14, .04, 0); b.renderOrder = 11; tr.add(b); } map.add(tr); return tr; });
 }
 // IBX is planned: dashed (gaps cut from the tube's draw range by showing every other chunk) + 18 station dots
 const ibxCurve = LINES.ibx.tubes[0].userData.curve;
-const stations = [...Array(18)].map((_, i) => { const p = ibxCurve.getPointAt(i / 17); const m = cyl(.05, .05, .03, psx({ color: '#000', emissive: '#ffffff', amb: 0 }), p.x, LY + .03, p.z, 6); map.add(m); return m; });
+const stations = [...Array(18)].map((_, i) => { const p = ibxCurve.getPointAt(i / 17); const sm = psx({ color: '#000', emissive: '#ffffff', amb: 0 }); sm.depthTest = false; const m = cyl(.05, .05, .03, sm, p.x, LY + .03, p.z, 6); m.renderOrder = 12; map.add(m); return m; });
 // problem markers: X where lines don't meet, and nickel coins per company
-const xMat = psx({ color: '#000', emissive: '#ff3030', amb: 0 });
-const xMarks = [[.62, .95], [.3, -.15], [.95, 1.42]].map(([x, z]) => { const g = new THREE.Group(); for (const r of [.785, -.785]) { const b = boxM(.26, .03, .05, xMat, 0, 0, 0); b.rotation.y = r; g.add(b); } g.position.set(x, LY + .08, z); map.add(g); return g; });
+const xMat = psx({ color: '#000', emissive: '#ff3030', amb: 0 }); xMat.depthTest = false;
+const xMarks = [[.62, .95], [.3, -.15], [.95, 1.42]].map(([x, z]) => { const g = new THREE.Group(); for (const r of [.785, -.785]) { const b = boxM(.26, .03, .05, xMat, 0, 0, 0); b.renderOrder = 12; b.rotation.y = r; g.add(b); } g.position.set(x, LY + .08, z); map.add(g); return g; });
 const coinMat = psx({ color: '#c8ccd2', amb: .7 });
 const coins = [[.35, -1.4], [1.95, 1.75], [2.4, -.9]].map(([x, z]) => { const c = cyl(.14, .14, .04, coinMat, x, LY + .5, z, 10); map.add(c); return c; });
 // free-transfer squares at junctions (1948)
-const xferMat = psx({ color: '#000', emissive: '#ffffff', amb: 0 });
-const xfers = [[.06, 1.0], [.12, .72], [.22, -.2], [.62, .92], [.3, .97]].map(([x, z]) => { const m = boxM(.11, .05, .11, xferMat, x, LY + .04, z); map.add(m); return m; });
+const xferMat = psx({ color: '#000', emissive: '#ffffff', amb: 0 }); xferMat.depthTest = false;
+const xfers = [[.06, 1.0], [.12, .72], [.22, -.2], [.62, .92], [.3, .97]].map(([x, z]) => { const m = boxM(.11, .05, .11, xferMat, x, LY + .04, z); m.renderOrder = 12; map.add(m); return m; });
 // confetti
 const confC = ['#ffe14a', '#59d4ff', '#ff6a3d', '#7cf07c', '#ff7ad9'].map(c => psx({ color: '#000', emissive: c, amb: 0, side: THREE.DoubleSide }));
 const confetti = [...Array(70)].map((_, i) => { const m = mesh(new THREE.PlaneGeometry(.07, .045), confC[i % 5], 0, -9, 0); scene.add(m); return { m, a: (i * 2.39996) % (Math.PI * 2), v: .9 + ((i * .618) % 1) * 1.4, up: 2.2 + ((i * .414) % 1) * 1.6 }; });
