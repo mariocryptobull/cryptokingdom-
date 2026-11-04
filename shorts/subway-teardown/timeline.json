@@ -1,0 +1,110 @@
+{
+ "dur": 73.0,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "New York's subway",
+    "started as a turf war.",
+    "Three rival systems,",
+    "one city."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.8,
+   "chunks": [
+    "In 1904, the IRT opened",
+    "the first underground line.",
+    "The city built it.",
+    "A private company ran it."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 13.8,
+   "chunks": [
+    "Then came the BMT,",
+    "another private operator,",
+    "spreading across",
+    "Brooklyn and Queens."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 20.3,
+   "chunks": [
+    "And in 1932,",
+    "the city launched its own competitor:",
+    "the IND."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 25.0,
+   "chunks": [
+    "Three systems meant separate fares,",
+    "duplicate routes,",
+    "and lines that didn't connect.",
+    "And a fixed nickel fare",
+    "left the private companies struggling."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 34.6,
+   "chunks": [
+    "So in 1940, the city bought out",
+    "the IRT and BMT,",
+    "and the three became ONE."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 41.4,
+   "chunks": [
+    "Free transfers came later.",
+    "And in 1968,",
+    "the state's new MTA took over."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 48.1,
+   "chunks": [
+    "Next up: the Interborough Express.",
+    "A planned 14-mile light rail line",
+    "linking Brooklyn and Queens,",
+    "along an existing freight corridor."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 58.0,
+   "chunks": [
+    "18 stations,",
+    "and no detour through Manhattan."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 61.7,
+   "chunks": [
+    "It's still in design",
+    "and environmental review.",
+    "No opening date yet."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 66.9,
+   "chunks": [
+    "Congrats!",
+    "You just rode through",
+    "more than a century",
+    "of subway history."
+   ]
+  }
+ ]
+}

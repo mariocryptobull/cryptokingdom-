@@ -1,0 +1,13 @@
+[
+ {"id":"v01","voice":"am_michael","speed":1.0,"text":"New York's subway started as a turf war. Three rival systems, one city."},
+ {"id":"v02","voice":"am_michael","speed":1.0,"text":"In nineteen oh four, the IRT opened the first underground line. The city built it. A private company ran it."},
+ {"id":"v03","voice":"am_michael","speed":1.0,"text":"Then came the BMT, another private operator, spreading across Brooklyn and Queens."},
+ {"id":"v04","voice":"am_michael","speed":1.0,"text":"And in nineteen thirty two, the city launched its own competitor: the IND."},
+ {"id":"v05","voice":"am_michael","speed":1.0,"text":"Three systems meant separate fares, duplicate routes, and lines that didn't connect. And a fixed nickel fare left the private companies struggling."},
+ {"id":"v06","voice":"am_michael","speed":1.0,"text":"So in nineteen forty, the city bought out the IRT and BMT, and the three became one."},
+ {"id":"v07","voice":"am_michael","speed":1.0,"text":"Free transfers came later. And in nineteen sixty eight, the state's new MTA took over."},
+ {"id":"v08","voice":"am_michael","speed":1.0,"text":"Next up: the Interborough Express. A planned fourteen mile light rail line linking Brooklyn and Queens, along an existing freight corridor."},
+ {"id":"v09","voice":"am_michael","speed":1.0,"text":"Eighteen stations, and no detour through Manhattan."},
+ {"id":"v10","voice":"am_michael","speed":1.0,"text":"It's still in design and environmental review. No opening date yet."},
+ {"id":"v11","voice":"am_michael","speed":1.0,"text":"Congrats! You just rode through more than a century of subway history."}
+]
