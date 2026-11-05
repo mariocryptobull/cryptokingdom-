@@ -1,0 +1,62 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "How does a jet engine push an airliner through the sky? Let's take one apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "This is a turbofan, the engine on almost every airliner. Its job: grab a huge amount of air, and throw it out the back, fast."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Up front, the giant fan. Most of the air it pulls in never enters the core. It flows around it. That's bypass air, and it makes most of the thrust."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The rest enters the core. Rows of compressor blades squeeze it, stage after stage, to over thirty times outside pressure."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "In the combustor, fuel sprays into that squeezed air and burns nonstop, like a blowtorch that never goes out."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The hot gas blasts through the turbine and spins it. Shafts carry that power forward to drive the compressor and fan."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Then it rushes out the nozzle. Air goes back, so the engine goes forward. Newton's third law."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Suck, squeeze, bang, blow. All at once, all the time."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The Boeing 737's CFM fifty-six: a five-foot fan, about five times more air around the core than through it, and up to twenty-seven thousand pounds of thrust."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered the jet engine."
+ }
+]

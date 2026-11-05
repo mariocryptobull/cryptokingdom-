@@ -1,0 +1,103 @@
+{
+ "dur": 73.4,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "How does a jet engine push",
+    "an airliner through the sky?",
+    "Let's take one apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.38,
+   "chunks": [
+    "This is a turbofan,",
+    "the engine on almost every airliner.",
+    "Its job: grab a huge amount of air,",
+    "and throw it out the back, fast."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 13.86,
+   "chunks": [
+    "Up front, the giant fan.",
+    "Most of the air it pulls in",
+    "never enters the core.",
+    "It flows around it.",
+    "That's bypass air,",
+    "and it makes most of the thrust."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 23.48,
+   "chunks": [
+    "The rest enters the core.",
+    "Rows of compressor blades squeeze it,",
+    "stage after stage,",
+    "to over 30 times outside pressure."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 31.71,
+   "chunks": [
+    "In the combustor,",
+    "fuel sprays into that squeezed air",
+    "and burns nonstop,",
+    "like a blowtorch that never goes out."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 38.98,
+   "chunks": [
+    "The hot gas blasts through the turbine",
+    "and spins it.",
+    "Shafts carry that power forward",
+    "to drive the compressor and fan."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 46.31,
+   "chunks": [
+    "Then it rushes out the nozzle.",
+    "Air goes back,",
+    "so the engine goes forward.",
+    "Newton's third law."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 52.51,
+   "chunks": [
+    "Suck, squeeze, bang, blow.",
+    "All at once, all the time."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 56.38,
+   "chunks": [
+    "The Boeing 737's CFM56:",
+    "a five-foot fan,",
+    "about five times more air around the core",
+    "than through it,",
+    "and up to 27,000 pounds of thrust."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 68.56,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the jet engine."
+   ]
+  }
+ ]
+}
