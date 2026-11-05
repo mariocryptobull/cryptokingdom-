@@ -1,0 +1,111 @@
+{
+ "dur": 71.6,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "How does a steel box",
+    "carry you up a hundred floors?",
+    "Let's take",
+    "an elevator apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.85,
+   "chunks": [
+    "This is a traction elevator.",
+    "The car rides up and down the shaft,",
+    "hung from steel hoist ropes."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 12.08,
+   "chunks": [
+    "Up top, the ropes wrap",
+    "over a grooved wheel called the sheave.",
+    "An electric motor turns it,",
+    "and friction in the grooves does the lifting."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 20.35,
+   "chunks": [
+    "On the other end of the ropes",
+    "hangs the counterweight.",
+    "It weighs about as much as the car,",
+    "plus 40% of a full load."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 28.03,
+   "chunks": [
+    "So the motor never",
+    "lifts the whole car.",
+    "It only moves the difference."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 32.65,
+   "chunks": [
+    "Guide rails run",
+    "the full height of the shaft,",
+    "keeping the car and counterweight",
+    "on track."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 38.1,
+   "chunks": [
+    "Codes require",
+    "at least three hoist ropes,",
+    "each built with",
+    "a huge safety margin."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 43.61,
+   "chunks": [
+    "But what if",
+    "the car starts falling?",
+    "Up top, a governor watches the speed.",
+    "Too fast, and it trips."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 50.03,
+   "chunks": [
+    "It grabs its own rope,",
+    "which yanks the safety brakes.",
+    "Steel wedges bite the guide rails",
+    "and stop the car."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 57.49,
+   "chunks": [
+    "In 1854, in New York,",
+    "Elisha Otis stood on a raised platform",
+    "and had its rope cut.",
+    "It dropped a few inches, then held."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 66.89,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the elevator."
+   ]
+  }
+ ]
+}

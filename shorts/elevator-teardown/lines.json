@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "How does a steel box carry you up a hundred floors? Let's take an elevator apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "This is a traction elevator. The car rides up and down the shaft, hung from steel hoist ropes."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Up top, the ropes wrap over a grooved wheel called the sheave. An electric motor turns it, and friction in the grooves does the lifting."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "On the other end of the ropes hangs the counterweight. It weighs about as much as the car, plus forty percent of a full load."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "So the motor never lifts the whole car. It only moves the difference."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Guide rails run the full height of the shaft, keeping the car and counterweight on track."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Codes require at least three hoist ropes, each built with a huge safety margin."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "But what if the car starts falling? Up top, a governor watches the speed. Too fast, and it trips."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "It grabs its own rope, which yanks the safety brakes. Steel wedges bite the guide rails and stop the car."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "In eighteen fifty-four, in New York, Elisha Otis stood on a raised platform and had its rope cut. It dropped a few inches, then held."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered the elevator."
+ }
+]
