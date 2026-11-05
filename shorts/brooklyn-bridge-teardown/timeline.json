@@ -1,0 +1,118 @@
+{
+ "dur": 73.0,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "How was the",
+    "Brooklyn Bridge built?",
+    "When it opened, it was the longest",
+    "suspension bridge on Earth."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 6.65,
+   "chunks": [
+    "Work began in 1870.",
+    "Its designer, John Roebling,",
+    "had died,",
+    "so his son Washington took over."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 13.74,
+   "chunks": [
+    "First, caissons:",
+    "giant upside-down wooden boxes,",
+    "sunk into the riverbed,",
+    "where men dug",
+    "in compressed air."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 20.8,
+   "chunks": [
+    "Brooklyn's sank 44 feet,",
+    "Manhattan's 78.",
+    "Workers got the bends,",
+    "and Washington was left bedridden."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 28.18,
+   "chunks": [
+    "His wife Emily",
+    "carried his orders.",
+    "On the caissons, granite towers",
+    "rose 276 feet."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 34.94,
+   "chunks": [
+    "On shore,",
+    "anchorages:",
+    "60,000 tons of stone,",
+    "holding chains for the cables."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 40.56,
+   "chunks": [
+    "From 1877,",
+    "wheels spun steel wire",
+    "across the river.",
+    "Four cables,",
+    "19 strands each."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 47.75,
+   "chunks": [
+    "Then suspenders",
+    "and diagonal stays",
+    "hung the deck",
+    "from the cables and towers."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 52.82,
+   "chunks": [
+    "On May 24, 1883,",
+    "it opened.",
+    "Emily crossed first.",
+    "About 150,000 people",
+    "followed."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 60.65,
+   "chunks": [
+    "Trains crossed",
+    "until 1944.",
+    "Since 2021,",
+    "it even has",
+    "a protected bike lane."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 67.45,
+   "chunks": [
+    "Congrats! You've discovered",
+    "how the Brooklyn Bridge",
+    "was built."
+   ]
+  }
+ ]
+}
