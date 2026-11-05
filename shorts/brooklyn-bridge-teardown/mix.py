@@ -130,6 +130,7 @@ mus *= (.2 / 3.16) / rms(mus.mean(1))
 env = np.abs(vox[:, 0]); from scipy.ndimage import uniform_filter1d, maximum_filter1d
 env = uniform_filter1d(maximum_filter1d(env, int(.25 * SR)), int(.2 * SR)); duck = 1 - .45 * np.clip(env / .1, 0, 1)
 mus *= duck[:, None]
+if os.environ.get('NO_MUSIC'): mus[:] = 0   # NO_MUSIC=1 python mix.py → voice + foley only
 fx *= .9
 out = mus + fx + vox
 for c in range(2): out[:, c] = limit(out[:, c], .95)
