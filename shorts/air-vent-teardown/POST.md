@@ -11,3 +11,5 @@ Sources: ACCA Manual D velocity guidance; ASHRAE Standard 55; Krueger/Conklin di
 
 **On-screen hook (first 2 s):** "HOW AIR FLOWS THROUGH A VENT"
 **Pinned comment idea:** "What should we take apart next?"
+
+**Audio:** No music. Add a trending sound in-app and keep it about 15–20 dB under the voice.
