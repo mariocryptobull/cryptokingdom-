@@ -8,7 +8,9 @@ Paste into a new Claude Code session (one video per session; they render in para
 - 1080×1920, 60–75 s, English captions, delivered in chat with SendUserFile (phone copy).
 - Voice: Kokoro `am_michael`, speed ~1.0–1.08 (trim to fit 60–75 s).
 - Styles: Exploded Teardown (template: `shorts/tbm-teardown`, `shorts/bliss-st-teardown`) or PS1 low-poly with the orange tabby cat (template: `shorts/subway-ps1`).
-- Closer: "Congrats! You've discovered …".
+- Music: catchy house bed from `shorts/_tools/house.py` (124 BPM, four-on-the-floor). In mix.py replace the old score section with `mus = house(N, END, breaks=[...], tail=DUR - END)`; keep the voice-over-music balance and ducking block. One short break before the payoff line so the drop lands on it.
+- Closer: an on-screen + spoken "What should we take apart next?" beat, then "Congrats! You've discovered …".
+- Style: Exploded Teardown only (the PS1 cat format is retired for now).
 - Research: facts table with sources in `FACTS.md`; captions + hashtags in `POST.md`; credits in `CREDITS`.
 - Before rendering: test stills across the timeline and fix framing/overlaps.
 - Render: copy `finish.sh` from a template, set the frame count (= round(dur × 24)), run it in the background with the max timeout; it resumes if killed (render ~2 h on 4 CPUs, 3 workers).
