@@ -1,0 +1,107 @@
+{
+ "dur": 73.4,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "What's actually inside",
+    "a military recon drone?",
+    "Let's take one apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.4,
+   "chunks": [
+    "Small recon drones are often",
+    "hand-launched planes:",
+    "under two kilos,",
+    "with a wingspan around 1.5 meters."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 13.22,
+   "chunks": [
+    "An electric motor",
+    "spins the propeller.",
+    "A rechargeable battery fills the fuselage,",
+    "good for an hour or more aloft."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 21.06,
+   "chunks": [
+    "The brain is",
+    "the flight controller.",
+    "Gyros and accelerometers feel every tilt,",
+    "and GPS tells it where it is."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 28.7,
+   "chunks": [
+    "Autopilot software flies",
+    "a preplanned route of waypoints",
+    "on its own,",
+    "or a pilot takes over by hand."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 35.48,
+   "chunks": [
+    "A radio datalink",
+    "streams live video to a ground station,",
+    "out to around ten kilometers."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 41.31,
+   "chunks": [
+    "And under the nose, the whole point:",
+    "a stabilized camera turret,",
+    "with a daylight and a thermal camera."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 48.75,
+   "chunks": [
+    "So where does Palantir fit in?",
+    "It doesn't build the drone.",
+    "It builds the software."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 53.75,
+   "chunks": [
+    "The Pentagon's Maven system,",
+    "largely built on Palantir software,",
+    "fuses drone video with other feeds,",
+    "flags objects with computer vision,",
+    "and maps them for human analysts."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 66.36,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 68.57,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the recon drone."
+   ]
+  }
+ ]
+}

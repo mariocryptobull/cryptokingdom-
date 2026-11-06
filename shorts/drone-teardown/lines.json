@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What's actually inside a military recon drone? Let's take one apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Small recon drones are often hand-launched planes: under two kilos, with a wingspan around one and a half meters."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "An electric motor spins the propeller. A rechargeable battery fills the fuselage, good for an hour or more aloft."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The brain is the flight controller. Gyros and accelerometers feel every tilt, and GPS tells it where it is."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Autopilot software flies a preplanned route of waypoints on its own, or a pilot takes over by hand."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "A radio datalink streams live video to a ground station, out to around ten kilometers."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "And under the nose, the whole point: a stabilized camera turret, with a daylight and a thermal camera."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "So where does Palantir fit in? It doesn't build the drone. It builds the software."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The Pentagon's Maven system, largely built on Palantir software, fuses drone video with other feeds, flags objects with computer vision, and maps them for human analysts."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered the recon drone."
+ }
+]
