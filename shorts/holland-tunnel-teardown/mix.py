@@ -15,11 +15,12 @@ rng = np.random.default_rng(11)
 mtof = lambda m: 440 * 2 ** ((m - 69) / 12)
 BEAT = 60 / 96; BAR = 4 * BEAT
 
-# ---------------- score: none (trending sound added in-app) ----------------
+# ---------------- score: deep house bed (house2.py) ----------------
 sys.path.insert(0, os.path.join(HERE, '..', '_tools')); pass
 VT = {v['id']: v['t'] for v in TL['vo']}
 END = max(e['t'] for e in EV if e['type'] == 'card') - .2
-mus = np.zeros((N, 2))   # no music bed: a trending sound is added in-app
+sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house2 import bed
+mus = bed('deep', N, END, breaks=[(VT['v09'] - 2.0, VT['v09'])], tail=DUR - END)
 
 # ---------------- foley from the page's events ----------------
 def ring(f, d=1.2, v=1.0):
