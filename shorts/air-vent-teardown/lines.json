@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Why does the air from a vent hug the ceiling? Let's follow it from the blower."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "A spinning blower wheel flings air outward, building a pressure difference of about half an inch of water. Tiny, but enough to push air through the house."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "In the main duct, air moves about nine hundred feet per minute. Where the duct narrows, it speeds up. Where it widens, it slows, and pressure climbs back."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Friction, and every elbow, costs pressure. Branch ducts run slower, about six hundred feet per minute."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "At the diffuser, angled vanes fling the stream sideways, along the ceiling."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "The fast jet drags air out of the gap above it. Pressure drops there, and the jet gets pulled onto the ceiling. That's the Coanda effect."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Then it breaks into turbulent eddies, mixing and slowing. Engineers size it to drop below fifty feet per minute by the end of its throw."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "By the time it reaches you, it's a gentle draft, under forty feet per minute. Warm air rises, cool air sinks."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "That's why it hugs the ceiling: a fast jet, a low pressure gap, and a surface to cling to."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Congrats! You've discovered how air flows through a vent."
+ }
+]
