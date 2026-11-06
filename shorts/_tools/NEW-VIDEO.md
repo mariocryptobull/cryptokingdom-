@@ -8,7 +8,7 @@ Paste into a new Claude Code session (one video per session; they render in para
 - 1080×1920, 60–75 s, English captions, delivered in chat with SendUserFile (phone copy).
 - Voice: Kokoro `am_michael`, speed ~1.0–1.08 (trim to fit 60–75 s).
 - Styles: Exploded Teardown (template: `shorts/tbm-teardown`, `shorts/bliss-st-teardown`) or PS1 low-poly with the orange tabby cat (template: `shorts/subway-ps1`).
-- Music: deep house from `shorts/_tools/house2.py` (style 'deep': 120 BPM, 2-bar minimal-style opening, then dusty Rhodes groove). In mix.py replace the old score section with `sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house2 import bed; mus = bed('deep', N, END, breaks=[...], tail=DUR - END)`; keep the voice-over-music balance and ducking block. One short break before the payoff line so the drop lands on it.
+- Music: deep house from `shorts/_tools/house2.py` (style 'deep': 120 BPM lo-fi deep house, dusty Rhodes, vinyl crackle). In mix.py replace the old score section with `sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house2 import bed; mus = bed('deep', N, END, breaks=[...], tail=DUR - END)`; keep the voice-over-music balance and ducking block. One short break before the payoff line so the drop lands on it.
 - Closer: an on-screen + spoken "What should we take apart next?" beat, then "Congrats! You've discovered …".
 - Style: Exploded Teardown only (the PS1 cat format is retired for now).
 - Research: facts table with sources in `FACTS.md`; captions + hashtags in `POST.md`; credits in `CREDITS`.

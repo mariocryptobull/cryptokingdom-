@@ -3,7 +3,7 @@
     from house2 import bed
     mus = bed('deep', N, END, breaks=[(t0, t1)], tail=DUR - END)      # 'deep' | 'minimal' | 'garage'
 
-deep    : 120 BPM lo-fi deep house, opening 2 bars minimal-style (punchy kick, clicks, rim, rolling bass) then the drop. Dusty Rhodes 9th chords, vinyl crackle, warm sub, lazy swung hats, vowel chops.
+deep    : 120 BPM lo-fi deep house. Dusty Rhodes 9th chords, vinyl crackle, warm sub, lazy swung hats, vowel chops.
 minimal : 125 BPM minimal / tech house. Rolling 16th bassline, rim + clicky percussion, hypnotic one-note blips, no chords.
 garage  : 132 BPM UK garage 2-step. Skippy kick pattern, heavy swing, organ bass, stabby minor 7ths, chopped vocal hits.
 """
@@ -97,38 +97,23 @@ def bed(style, N, END, breaks=(), tail=2.5):
         # Fm9  Dbmaj7  Ebm9->Ab13  Cm7   (bass roots + voicings)
         P = [(41, [56, 60, 63, 67]), (37, [56, 60, 63, 65]), (39, [54, 58, 61, 65]), (36, [55, 58, 63, 67])]
         nb = int(np.ceil(END / (4 * B)))
-        INTRO = 2                                         # minimal-style opening: punchy kick, clicks, rim, rolling bass
-        roll = [0, 0, 12, 0, 3, 0, 12, 7]; gate = [1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1]
         for bar in range(nb):
-            t0 = bar * 4 * B; root, ch = P[bar % 4] if bar >= INTRO else P[0]; br = inb(t0 + 2 * B); intro = bar < INTRO
-            if not intro:
-                put(M, rhodes(ch, 4 * B + .4, .42 if not br else .5), t0, -.1)
-                put(M, rhodes(ch, 2 * B, .24), t0 + S * 10 + SW, .15)
-            elif bar == INTRO - 1:                            # chords creep in muffled before the drop
-                put(M, lp(rhodes(ch, 2 * B, .3), 700), t0 + S * 10 + SW, .1)
+            t0 = bar * 4 * B; root, ch = P[bar % 4]; br = inb(t0 + 2 * B)
+            put(M, rhodes(ch, 4 * B + .4, .42 if not br else .5), t0 + S * 0, -.1)
+            put(M, rhodes(ch, 2 * B, .24), t0 + S * 10 + SW, .15)
             if br: put(M, pad(ch, 4 * B + .3, .16, 1200), t0)
             for s in range(16):
                 t = t0 + s * S + (SW if s % 2 else 0)
                 if t >= END - .05: break
-                if s % 4 == 0 and not br:
-                    put(K, kick(.32, 48, 115, .95, 1.7) if intro else kick(.4, 44, 95, .95, 1.5), t); kicks.append(t)
-                if s % 2 == 1: put(D, click(.16 if intro else .08), t, -.5 + (s % 5) / 4)
-                if s in (6, 14): put(D, rim(.14 if intro else .07), t, -.3)
-                if s % 4 == 2 and not br: put(D, hat(.12 if not intro else .07, .04 if not intro else .02, .07, 7000 if not intro else 9500), t, .3)
-                if intro:
-                    put(D, shaker(.04), t, .45)
-                    if gate[s]: put(M, rollbass(root + roll[(s + bar) % 8], S * .9, .5), t)
-                    if bar == INTRO - 1 and s in (2, 9): put(M, blip(72 if s == 2 else 79, .12), t, .35 if s == 2 else -.35)
-                    continue
-                if s in (4, 12) and not br: put(D, clap(.32, 1000), t + .006, .05)
+                if s % 4 == 0 and not br: put(K, kick(.42, 42, 70, .85, 1.2), t); kicks.append(t)
+                if s in (4, 12) and not br and bar >= 1: put(D, clap(.32, 1000), t + .006, .05)
+                if s % 4 == 2 and not br: put(D, hat(.12, .04, .07, 7000), t, .3)
                 if s % 2 == 1: put(D, hat(.04, .008, .035, 9000), t, -.35)
-                if s in (3, 7, 11, 13) and bar >= INTRO + 1: put(D, conga(64 if s != 13 else 69, .12), t, .45)
+                if s in (3, 7, 11, 13) and bar >= 2: put(D, conga(64 if s != 13 else 69, .12), t, .45)
                 if not br and s in (0, 3, 6, 10): put(M, sub(root + (12 if s == 10 else 0), S * (2.6 if s != 10 else 1.6), .5), t)
-            if bar >= INTRO and bar % 2 == 1 and not br:     # little vowel chop answer
+            if bar >= 2 and bar % 2 == 1 and not br:     # little vowel chop answer
                 for st, m, vw in [(8, ch[3] + 12, 'o'), (10, ch[2] + 12, 'a'), (14, ch[3] + 12, 'e')]:
                     put(M, chop(m, vw, S * 1.6, .1), t0 + st * S + SW, .25)
-            if bar == INTRO - 1:                              # riser into the drop
-                d = 2 * B; put(D, hp(noise(d), 1500) * (t_(d) / d) ** 2 * .15, t0 + 2 * B)
         cr = crackle(min(N / SR, END + tail)); put(M, cr, 0, 0, 1.0); put(M, cr[::-1].copy(), 0, .6, .6)
         end = lambda o: (put(o, rhodes([53, 56, 60, 63, 67], 3.5, .6), END), put(o, sub(29, 2.0, .5), END))
         out_lp = 4200
