@@ -1,0 +1,175 @@
+1
+00:00:00,460 --> 00:00:01,384
+Look around.
+
+2
+00:00:01,384 --> 00:00:03,079
+Phone cases, bottle caps,
+
+3
+00:00:03,079 --> 00:00:04,157
+keyboard keys.
+
+4
+00:00:04,157 --> 00:00:05,698
+Most of them were made
+
+5
+00:00:05,698 --> 00:00:07,112
+the same way.
+
+6
+00:00:07,160 --> 00:00:08,472
+Injection molding.
+
+7
+00:00:08,472 --> 00:00:10,002
+Pull the machine apart,
+
+8
+00:00:10,002 --> 00:00:11,678
+and it has two main halves:
+
+9
+00:00:11,678 --> 00:00:12,917
+an injection unit
+
+10
+00:00:12,917 --> 00:00:14,719
+and a clamping unit.
+
+11
+00:00:14,860 --> 00:00:16,052
+Plastic pellets drop
+
+12
+00:00:16,052 --> 00:00:16,946
+from the hopper
+
+13
+00:00:16,946 --> 00:00:18,568
+into a heated barrel.
+
+14
+00:00:18,660 --> 00:00:20,833
+Inside, a reciprocating screw
+
+15
+00:00:20,833 --> 00:00:21,879
+does two jobs.
+
+16
+00:00:21,879 --> 00:00:23,005
+It turns to mix
+
+17
+00:00:23,005 --> 00:00:24,534
+and melt the plastic.
+
+18
+00:00:24,534 --> 00:00:26,143
+Then it slams forward
+
+19
+00:00:26,143 --> 00:00:27,760
+like a plunger.
+
+20
+00:00:27,860 --> 00:00:28,836
+The melt shoots
+
+21
+00:00:28,836 --> 00:00:30,007
+through the nozzle,
+
+22
+00:00:30,007 --> 00:00:30,918
+down the sprue,
+
+23
+00:00:30,918 --> 00:00:32,024
+along the runners,
+
+24
+00:00:32,024 --> 00:00:33,391
+and through a tiny gate
+
+25
+00:00:33,391 --> 00:00:34,857
+into the cavity.
+
+26
+00:00:34,960 --> 00:00:35,976
+The clamping unit
+
+27
+00:00:35,976 --> 00:00:37,590
+holds the two mold halves shut
+
+28
+00:00:37,590 --> 00:00:39,335
+against that pressure.
+
+29
+00:00:39,560 --> 00:00:41,347
+Then comes the longest step:
+
+30
+00:00:41,347 --> 00:00:41,990
+cooling.
+
+31
+00:00:41,990 --> 00:00:44,063
+Water channels pull the heat out
+
+32
+00:00:44,063 --> 00:00:46,054
+until the part is solid.
+
+33
+00:00:46,160 --> 00:00:47,198
+The mold opens,
+
+34
+00:00:47,198 --> 00:00:48,384
+and ejector pins
+
+35
+00:00:48,384 --> 00:00:50,134
+push the part free.
+
+36
+00:00:50,360 --> 00:00:51,918
+A typical cycle takes
+
+37
+00:00:51,918 --> 00:00:53,087
+10 to 30 seconds.
+
+38
+00:00:53,087 --> 00:00:54,568
+And one mold can have
+
+39
+00:00:54,568 --> 00:00:55,893
+several cavities,
+
+40
+00:00:55,893 --> 00:00:56,983
+so every cycle
+
+41
+00:00:56,983 --> 00:00:58,954
+makes several parts.
+
+42
+00:00:59,260 --> 00:01:00,325
+Clamp. Inject.
+
+43
+00:01:00,325 --> 00:01:01,226
+Cool. Eject.
+
+44
+00:01:01,226 --> 00:01:03,601
+Repeat, millions of times.

@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "How do you dig a subway tunnel without tearing up the city? You send in a tunnel boring machine."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Think of it as a factory on rails: a giant drill up front, and a moving construction site behind it."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "The cutterhead spins a few times a minute. Steel disc cutters press into the rock until it cracks and chips away."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "In soft ground, pressurized soil or slurry holds up the face, so the earth doesn't collapse."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Behind the cutterhead, a steel shield keeps the tunnel open while the crew works inside."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "The broken rock, called muck, is scooped up, carried back by a screw conveyor, then belted out of the tunnel."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Now the clever part. A robotic arm sets curved concrete segments into a ring, building the tunnel lining as it goes."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Hydraulic rams push off that fresh ring to shove the whole machine forward. Adjust the rams, and it steers."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Cut, muck, ring, push. Repeat, around the clock."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "New York's Second Avenue Subway machine was four hundred fifty feet long, and averaged about sixty feet a day under Manhattan."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "text": "Congrats! You've discovered the tunnel boring machine."
+ }
+]

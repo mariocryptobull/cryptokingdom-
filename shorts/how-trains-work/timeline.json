@@ -1,0 +1,16 @@
+{
+  "dur": 65.5,
+  "vo": [
+    {"id": "v01", "t": 0.6,  "chunks": ["Every electric train is a chain.", "Pull it apart,", "and you can see every link."]},
+    {"id": "v02", "t": 6.2,  "chunks": ["Up top, the catenary.", "Between New Haven and Boston,", "it carries 25,000 volts."]},
+    {"id": "v03", "t": 12.7, "chunks": ["A spring-loaded pantograph", "presses against the wire", "and pulls that power down."]},
+    {"id": "v04", "t": 18.1, "chunks": ["Inside, a transformer", "steps it down,", "and a traction converter", "reshapes it for the motors."]},
+    {"id": "v05", "t": 24.3, "chunks": ["The motors drive the axles", "through gears."]},
+    {"id": "v06", "t": 27.8, "chunks": ["Now the clever part.", "The wheels aren't flat.", "They're cones."]},
+    {"id": "v07", "t": 31.9, "chunks": ["On a curve,", "the wheelset slides outward,", "so the outer wheel rolls", "on a bigger diameter.", "The train steers itself."]},
+    {"id": "v08", "t": 40.0, "chunks": ["And when it brakes,", "the motors become generators,", "sending energy back."]},
+    {"id": "v09", "t": 45.2, "chunks": ["Above all of it:", "positive train control.", "GPS, radio,", "and onboard computers", "that can stop the train", "on their own."]},
+    {"id": "v10", "t": 53.8, "chunks": ["Required by law since 2008.", "Live on every mandated line", "by the end of 2020."]},
+    {"id": "v11", "t": 61.6, "chunks": ["Wire. Wheel. Signal.", "That's a train."]}
+  ]
+}

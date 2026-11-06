@@ -1,0 +1,21 @@
+How Trains Work — Exploded Teardown short (1080×1920, 65.5 s)
+
+Made in code: no AI-generated video, no stock footage. The train is an illustrative model built in three.js, not CAD of a real trainset.
+Facts and sources: FACTS.md.
+
+TOOLS
+- Lemo-Opuscar film-style library (Exploded Teardown style, core render/audio tools) — https://github.com/lemomo-ai/lemo-opuscar — MIT
+- three.js r170 — MIT
+
+LIGHT
+- photo_studio_loft_hall_2k.hdr — Poly Haven, CC0 — https://polyhaven.com/a/photo_studio_loft_hall
+
+FONTS (SIL Open Font License 1.1, texts in fonts/)
+- Inter — The Inter Project Authors
+- JetBrains Mono — JetBrains
+
+MUSIC AND SOUND
+- Original score and foley, synthesised in code (mix.py). No samples.
+
+VOICE
+- Kokoro-82M (hexgrad), voice am_michael, Apache License 2.0; run locally via kokoro-onnx (MIT).

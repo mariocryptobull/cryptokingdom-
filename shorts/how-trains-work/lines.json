@@ -1,0 +1,13 @@
+[
+ {"id":"v01","voice":"am_michael","speed":1.0,"text":"Every electric train is a chain. Pull it apart, and you can see every link."},
+ {"id":"v02","voice":"am_michael","speed":1.0,"text":"Up top, the catenary. Between New Haven and Boston, it carries twenty-five thousand volts."},
+ {"id":"v03","voice":"am_michael","speed":1.0,"text":"A spring-loaded pantograph presses against the wire and pulls that power down."},
+ {"id":"v04","voice":"am_michael","speed":1.0,"text":"Inside, a transformer steps it down, and a traction converter reshapes it for the motors."},
+ {"id":"v05","voice":"am_michael","speed":1.0,"text":"The motors drive the axles through gears."},
+ {"id":"v06","voice":"am_michael","speed":1.0,"text":"Now the clever part. The wheels aren't flat. They're cones."},
+ {"id":"v07","voice":"am_michael","speed":1.0,"text":"On a curve, the wheelset slides outward, so the outer wheel rolls on a bigger diameter. The train steers itself."},
+ {"id":"v08","voice":"am_michael","speed":1.0,"text":"And when it brakes, the motors become generators, sending energy back."},
+ {"id":"v09","voice":"am_michael","speed":1.0,"text":"Above all of it, positive train control. GPS, radio, and onboard computers that can stop the train on their own."},
+ {"id":"v10","voice":"am_michael","speed":1.0,"text":"Required by law since two thousand eight. Live on every mandated line by the end of twenty twenty."},
+ {"id":"v11","voice":"am_michael","speed":1.0,"text":"Wire. Wheel. Signal. That's a train."}
+]

@@ -1,0 +1,12 @@
+[
+ {"id":"v01","voice":"am_michael","speed":1.0,"text":"Look around. Phone cases, bottle caps, keyboard keys. Most of them were made the same way."},
+ {"id":"v02","voice":"am_michael","speed":1.0,"text":"Injection molding. Pull the machine apart, and it has two main halves: an injection unit and a clamping unit."},
+ {"id":"v03","voice":"am_michael","speed":1.0,"text":"Plastic pellets drop from the hopper into a heated barrel."},
+ {"id":"v04","voice":"am_michael","speed":1.0,"text":"Inside, a reciprocating screw does two jobs. It turns to mix and melt the plastic. Then it slams forward like a plunger."},
+ {"id":"v05","voice":"am_michael","speed":1.0,"text":"The melt shoots through the nozzle, down the sprue, along the runners, and through a tiny gate into the cavity."},
+ {"id":"v06","voice":"am_michael","speed":1.0,"text":"The clamping unit holds the two mold halves shut against that pressure."},
+ {"id":"v07","voice":"am_michael","speed":1.0,"text":"Then comes the longest step, cooling. Water channels pull the heat out until the part is solid."},
+ {"id":"v08","voice":"am_michael","speed":1.0,"text":"The mold opens, and ejector pins push the part free."},
+ {"id":"v09","voice":"am_michael","speed":1.0,"text":"A typical cycle takes ten to thirty seconds. And one mold can have several cavities, so every cycle makes several parts."},
+ {"id":"v10","voice":"am_michael","speed":1.0,"text":"Clamp. Inject. Cool. Eject. Repeat, millions of times."}
+]
