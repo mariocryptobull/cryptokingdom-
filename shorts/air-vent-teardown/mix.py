@@ -15,11 +15,11 @@ rng = np.random.default_rng(11)
 mtof = lambda m: 440 * 2 ** ((m - 69) / 12)
 BEAT = 60 / 96; BAR = 4 * BEAT
 
-# ---------------- music: shared house bed (124 BPM); one short break before the payoff line so the drop lands on it ----------------
-sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house import house, BAR
+# ---------------- music: deep house bed (house2.py); one short break before the payoff line so the drop lands on it ----------------
+sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house import BAR; from house2 import bed
 VT = {v['id']: v['t'] for v in TL['vo']}
 END = max(e['t'] for e in EV if e['type'] == 'card') - .2
-mus = house(N, END, breaks=[(VT['v09'] - 2 * BAR, VT['v09'])], tail=DUR - END)
+mus = bed('deep', N, END, breaks=[(VT['v09'] - 2 * BAR, VT['v09'])], tail=DUR - END)
 
 # ---------------- foley from the page's events ----------------
 def ring(f, d=1.2, v=1.0):
