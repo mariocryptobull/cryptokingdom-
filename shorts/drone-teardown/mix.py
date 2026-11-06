@@ -5,7 +5,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(os.environ.get('LIB', '/root/lemo-opuscar'), 'core', 'audio'))
 sys.path.insert(0, os.path.join(HERE, '..', '_tools'))
 from sfx import SR, t_, env_exp, bp, lp, hp, noise, whoosh, thump, clack, click, ding, quindar, compress, limit, add, brown
-from house import house
+from house2 import bed
 
 TL = json.load(open(f'{HERE}/timeline.json'))
 EVJ = json.load(open(f'{HERE}/events.json'))
@@ -15,10 +15,10 @@ N = int((DUR + .5) * SR)
 fx = np.zeros((N, 2)); vox = np.zeros((N, 2))
 VT = {v['id']: v['t'] for v in TL['vo']}
 
-# ---------------- music: house bed, one break before the Palantir payoff so the drop lands on it ----------------
+# ---------------- music: deep house bed, one break before the Palantir payoff so the drop lands on it ----------------
 END = max(e['t'] for e in EV if e['type'] == 'card') - .2
 brk0 = VT['v07'] + VD['v07'] - .3
-mus = house(N, END, breaks=[(brk0, VT['v08'])], tail=DUR - END)
+mus = bed('deep', N, END, breaks=[(brk0, VT['v08'])], tail=DUR - END)
 
 # ---------------- foley ----------------
 def whir(d, f0=90, v=1.0):
