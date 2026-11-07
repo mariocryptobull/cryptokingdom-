@@ -1,0 +1,121 @@
+{
+ "dur": 72.3,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "What's inside",
+    "an Olympic barbell?",
+    "Let's take one apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 4.05,
+   "chunks": [
+    "A men's competition bar:",
+    "20 kilos,",
+    "2.2 meters long."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 8.77,
+   "chunks": [
+    "The shaft: alloy steel,",
+    "28 millimeters thick,",
+    "rated around 190,000 PSI."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 15.61,
+   "chunks": [
+    "That's the stress that tears it apart.",
+    "Below its yield point,",
+    "it bends and springs straight back."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 21.57,
+   "chunks": [
+    "The knurl: crossed grooves",
+    "that leave tiny diamond points",
+    "to bite into chalked hands."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 27.08,
+   "chunks": [
+    "Rings mark your grip,",
+    "and the center knurl",
+    "keeps the bar on your shoulders."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 31.76,
+   "chunks": [
+    "Now the sleeves. They spin,",
+    "on bronze bushings,",
+    "or needle bearings that spin even faster."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 37.72,
+   "chunks": [
+    "In a snatch or clean,",
+    "the bar flips around your wrists",
+    "in a split second.",
+    "Spinning sleeves let the heavy plates",
+    "stay put while it turns."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 46.34,
+   "chunks": [
+    "Snap rings lock the sleeves on,",
+    "end caps seal them,",
+    "and collars clamp the plates."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 51.71,
+   "chunks": [
+    "Now load it heavy.",
+    "In the jerk dip, the bar bends,",
+    "stores energy like a spring,",
+    "and snaps back. That's whip."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 60,
+   "chunks": [
+    "So it's not just a steel stick.",
+    "It's a spring with spinning ends."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 64.54,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 67.1,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the Olympic barbell."
+   ]
+  }
+ ]
+}

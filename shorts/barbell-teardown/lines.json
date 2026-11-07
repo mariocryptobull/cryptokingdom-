@@ -1,0 +1,80 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "What's inside an Olympic barbell? Let's take one apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "A men's competition bar: twenty kilos, two point two meters long."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "The shaft: alloy steel, twenty eight millimeters thick, rated around a hundred ninety thousand P S I."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "That's the stress that tears it apart. Below its yield point, it bends and springs straight back."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "The knurl: crossed grooves that leave tiny diamond points to bite into chalked hands."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "Rings mark your grip, and the center knurl keeps the bar on your shoulders."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "Now the sleeves. They spin, on bronze bushings, or needle bearings that spin even faster."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "In a snatch or clean, the bar flips around your wrists in a split second. Spinning sleeves let the heavy plates stay put while it turns."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "Snap rings lock the sleeves on, end caps seal them, and collars clamp the plates."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "Now load it heavy. In the jerk dip, the bar bends, stores energy like a spring, and snaps back. That's whip."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "So it's not just a steel stick. It's a spring with spinning ends."
+ },
+ {
+  "id": "v12",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v13",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "text": "Congrats! You've discovered the Olympic barbell."
+ }
+]
