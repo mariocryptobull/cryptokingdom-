@@ -1,0 +1,116 @@
+{
+ "dur": 73.9,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "This is",
+    "Elon Musk's Neuralink.",
+    "A coin-sized implant",
+    "that listens to your brain."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 6.01,
+   "chunks": [
+    "Let's take it apart.",
+    "A sealed case holds",
+    "a small battery,",
+    "charged wirelessly through the skin."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 12.07,
+   "chunks": [
+    "Inside, a custom chip",
+    "processes the brain's tiny signals."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 16.08,
+   "chunks": [
+    "Below, 64 threads,",
+    "thinner than a hair,",
+    "carry 1,024 electrodes."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 21.73,
+   "chunks": [
+    "A surgical robot, R1,",
+    "inserts them one by one,",
+    "dodging blood vessels."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 27.51,
+   "chunks": [
+    "How does it work?",
+    "Think about moving your hand,",
+    "and neurons in your motor cortex fire."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 32.77,
+   "chunks": [
+    "Electrodes catch those spikes,",
+    "and the chip sends them",
+    "over Bluetooth to a computer."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 37.97,
+   "chunks": [
+    "Software decodes that pattern into intent,",
+    "and the cursor moves."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 42.39,
+   "chunks": [
+    "In early 2024,",
+    "the first participant,",
+    "paralyzed below the shoulders,",
+    "got the implant,",
+    "and was soon playing chess by thought."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 51.16,
+   "chunks": [
+    "By early 2026:",
+    "21 participants.",
+    "Some have moved a robotic arm.",
+    "Speech, and a vision implant called Blindsight,",
+    "are in development."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 61.3,
+   "chunks": [
+    "Neuralink's goal:",
+    "control phones and computers by thought.",
+    "Musk has even said you could one day",
+    "summon your Tesla with your mind."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 69.97,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  }
+ ]
+}

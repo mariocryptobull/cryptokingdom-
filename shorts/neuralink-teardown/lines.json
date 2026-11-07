@@ -1,0 +1,74 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "This is Elon Musk's Neuralink. A coin-sized implant that listens to your brain."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Let's take it apart. A sealed case holds a small battery, charged wirelessly through the skin."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Inside, a custom chip processes the brain's tiny signals."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Below, sixty-four threads, thinner than a hair, carry one thousand twenty-four electrodes."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "A surgical robot, R1, inserts them one by one, dodging blood vessels."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "How does it work? Think about moving your hand, and neurons in your motor cortex fire."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Electrodes catch those spikes, and the chip sends them over Bluetooth to a computer."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Software decodes that pattern into intent, and the cursor moves."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "In early twenty twenty-four, the first participant, paralyzed below the shoulders, got the implant, and was soon playing chess by thought."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "By early twenty twenty-six: twenty-one participants. Some have moved a robotic arm. Speech, and a vision implant called Blindsight, are in development."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Neuralink's goal: control phones and computers by thought. Musk has even said you could one day summon your Tesla with your mind."
+ },
+ {
+  "id": "v12",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What should we take apart next?"
+ }
+]
