@@ -10,3 +10,5 @@ Sources: IWF equipment rules; Eleiko & Strength Shop on bar rotation; Garage Gym
 
 **On-screen hook (first 2 s):** "WHAT'S INSIDE AN OLYMPIC BARBELL?"
 **Pinned comment idea:** "What should we take apart next?"
+
+**Audio:** No music. Add your track in-app and keep it about 15–20 dB under the voice.

@@ -16,7 +16,7 @@ VT = {v['id']: v['t'] for v in TL['vo']}
 END = max(e['t'] for e in EV if e['type'] == 'card') - .2
 
 # ---------------- music: deep house bed, one-bar break before the payoff line (v11 sits on a bar line) ----------------
-sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house2 import bed; mus = bed('deep', N, END, breaks=[(VT['v11'] - 2.0, VT['v11'])], tail=DUR - END)
+sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house2 import bed; mus = np.zeros((N, 2))   # no music bed: the user adds their own track in-app
 
 # ---------------- foley from the page's events ----------------
 def ring(f, d=1.2, v=1.0):
