@@ -1,0 +1,74 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Why does fifty pounds on the cable machine feel so much lighter? Let's take one apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Steel plates ride up and down two guide rods. The selector pin decides how many plates you lift."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "A steel cable runs from the stack, over a chain of pulleys, out to your handle."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Tie the cable straight to the stack, and it's one to one. Fifty on the pin, fifty in your hand."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "But many machines hang the stack from a movable pulley. Now two strands of cable share the weight."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Each strand carries half, so your hand feels about twenty-five pounds. The price? Pull the handle two feet, and the stack rises one."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Force times distance stays the same. Some machines go four to one: a quarter of the force, four times the travel."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Then, reality. Each pulley loses a few percent to friction. Lifting, it adds to the load. Lowering, it helps you."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The steel cable barely stretches, about a millimeter here, so the load hits instantly, not springy."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "So the label says fifty. Your hands feel about twenty-five: closer to thirty pulling, twenty letting go."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v12",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered the cable machine."
+ }
+]

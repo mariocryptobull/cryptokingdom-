@@ -1,0 +1,119 @@
+{
+ "dur": 74.2,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "Why does fifty pounds",
+    "on the cable machine",
+    "feel so much lighter?",
+    "Let's take one apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.91,
+   "chunks": [
+    "Steel plates ride up and down",
+    "two guide rods.",
+    "The selector pin decides",
+    "how many plates you lift."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 12.44,
+   "chunks": [
+    "A steel cable runs from the stack,",
+    "over a chain of pulleys,",
+    "out to your handle."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 17.33,
+   "chunks": [
+    "Tie the cable straight to the stack,",
+    "and it's one to one.",
+    "Fifty on the pin,",
+    "fifty in your hand."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 23.3,
+   "chunks": [
+    "But many machines hang the stack",
+    "from a movable pulley.",
+    "Now two strands of cable",
+    "share the weight."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 29.16,
+   "chunks": [
+    "Each strand carries half,",
+    "so your hand feels about 25 pounds.",
+    "The price? Pull the handle two feet,",
+    "and the stack rises one."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 37.89,
+   "chunks": [
+    "Force \u00d7 distance stays the same.",
+    "Some machines go four to one:",
+    "a quarter of the force,",
+    "four times the travel."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 45.65,
+   "chunks": [
+    "Then, reality.",
+    "Each pulley loses a few percent to friction.",
+    "Lifting, it adds to the load.",
+    "Lowering, it helps you."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 52.95,
+   "chunks": [
+    "The steel cable barely stretches,",
+    "about a millimeter here,",
+    "so the load hits instantly,",
+    "not springy."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 60.41,
+   "chunks": [
+    "So the label says fifty.",
+    "Your hands feel about 25:",
+    "closer to 30 pulling,",
+    "20 letting go."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 67.6,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 69.65,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the cable machine."
+   ]
+  }
+ ]
+}
