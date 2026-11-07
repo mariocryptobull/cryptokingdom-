@@ -1,0 +1,21 @@
+Your Bicep Is a Lever (and It's Losing) — Exploded Teardown short (1080×1920, 75 s)
+
+Made in code: no AI-generated video, no stock footage. The arm is a stylised mechanical model built in three.js (bones as beams, biceps as an actuator; schematic, not anatomy).
+Facts and sources: FACTS.md.
+
+TOOLS
+- Lemo-Opuscar film-style library (Exploded Teardown style, core render/audio tools) — https://github.com/lemomo-ai/lemo-opuscar — MIT
+- three.js r170 — MIT
+
+LIGHT
+- photo_studio_loft_hall_2k.hdr — Poly Haven, CC0 — https://polyhaven.com/a/photo_studio_loft_hall
+
+FONTS (SIL Open Font License 1.1, texts in fonts/)
+- Inter — The Inter Project Authors
+- JetBrains Mono — JetBrains
+
+MUSIC AND SOUND
+- Deep house bed (shorts/_tools/house2.py) and foley, synthesised in code (mix.py). No samples.
+
+VOICE
+- Kokoro TTS v1.0 (Apache-2.0), voice am_michael.

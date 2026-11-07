@@ -1,0 +1,135 @@
+{
+ "dur": 74.8,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "Your bicep is a lever.",
+    "And mechanically,",
+    "it's losing."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 3.82,
+   "chunks": [
+    "Take the arm apart",
+    "like a machine.",
+    "Upper arm: the frame.",
+    "Forearm: a beam.",
+    "Elbow: the pivot."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 10.18,
+   "chunks": [
+    "The biceps is the actuator.",
+    "Its tendon anchors",
+    "just 4 cm from the elbow."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 15.73,
+   "chunks": [
+    "The dumbbell sits",
+    "35 cm out.",
+    "Pivot, effort, load:",
+    "a third-class lever."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 21.44,
+   "chunks": [
+    "Balance the torques.",
+    "10 kg is 98 newtons.",
+    "At 35 cm:",
+    "34 newton-meters."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 29.08,
+   "chunks": [
+    "With only 4 cm of leverage,",
+    "the biceps must pull",
+    "about 860 newtons.",
+    "Nearly 9\u00d7 the weight."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 37.14,
+   "chunks": [
+    "Real arms run",
+    "7 to 10 times.",
+    "So why build it this badly?"
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 41.76,
+   "chunks": [
+    "Speed.",
+    "Shorten the muscle 1 cm,",
+    "and the hand swings almost 9.",
+    "Small actuator,",
+    "huge range of motion."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 49.61,
+   "chunks": [
+    "And the load changes",
+    "through the curl.",
+    "Arm straight down,",
+    "almost no torque."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 54.25,
+   "chunks": [
+    "At 90 degrees,",
+    "the forearm is level.",
+    "The lever arm is longest.",
+    "That's the sticking point."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 59.89,
+   "chunks": [
+    "Curl past it,",
+    "and the torque drops again."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 63.35,
+   "chunks": [
+    "So every rep, your biceps pulls",
+    "about 9\u00d7 what you're holding."
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 67.92,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v14",
+   "t": 70.03,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the lever in your arm."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Your bicep is a lever. And mechanically, it's losing."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Take the arm apart like a machine. Upper arm: the frame. Forearm: a beam. Elbow: the pivot."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The biceps is the actuator. Its tendon anchors just four centimeters from the elbow."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The dumbbell sits thirty five centimeters out. Pivot, effort, load: a third class lever."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Balance the torques. Ten kilos is ninety eight newtons. At thirty five centimeters: thirty four newton meters."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "With only four centimeters of leverage, the biceps must pull about eight hundred sixty newtons. Nearly nine times the weight."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Real arms run seven to ten times. So why build it this badly?"
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Speed. Shorten the muscle one centimeter, and the hand swings almost nine. Small actuator, huge range of motion."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "And the load changes through the curl. Arm straight down, almost no torque."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "At ninety degrees, the forearm is level. The lever arm is longest. That's the sticking point."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Curl past it, and the torque drops again."
+ },
+ {
+  "id": "v12",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "So every rep, your biceps pulls about nine times what you're holding."
+ },
+ {
+  "id": "v13",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v14",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered the lever in your arm."
+ }
+]
