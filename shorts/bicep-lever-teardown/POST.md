@@ -10,3 +10,5 @@ Sources: OpenOregon Body Physics ("Body Levers"); Murray, Delp & Buchanan (J Bio
 
 **On-screen hook (first 2 s):** "YOUR BICEP IS A LEVER (AND IT'S LOSING)"
 **Pinned comment idea:** "What should we take apart next?"
+
+**Audio:** No music. Add your track in-app and keep it about 15–20 dB under the voice.

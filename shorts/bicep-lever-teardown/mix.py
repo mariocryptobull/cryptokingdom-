@@ -15,11 +15,11 @@ rng = np.random.default_rng(11)
 mtof = lambda m: 440 * 2 ** ((m - 69) / 12)
 BEAT = 60 / 96; BAR = 4 * BEAT
 
-# ---------------- music: deep house bed, one break before the payoff line ----------------
+# ---------------- music: none (user adds their own track in-app) ----------------
 VT = {v['id']: v['t'] for v in TL['vo']}
 END = max(e['t'] for e in EV if e['type'] == 'card') - .2
 sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house2 import bed
-mus = bed('deep', N, END, breaks=[(VT['v12'] - 2.6, VT['v12'] - .05)], tail=DUR - END)
+mus = np.zeros((N, 2))   # no music bed: the user adds their own track in-app
 
 # ---------------- foley from the page's events ----------------
 def ring(f, d=1.2, v=1.0):
