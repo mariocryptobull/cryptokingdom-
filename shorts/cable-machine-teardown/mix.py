@@ -18,7 +18,7 @@ END = max(e['t'] for e in EV if e['type'] == 'card') - .2
 # ---------------- music: deep house bed, one 2-bar break so the drop lands on the payoff line (v10) ----------------
 sys.path.insert(0, os.path.join(HERE, '..', '_tools')); from house2 import bed
 BAR = 4 * 60 / 120; drop = round(VT['v10'] / BAR) * BAR
-mus = bed('deep', N, END, breaks=[(drop - 2 * BAR, drop)], tail=DUR - END)
+mus = np.zeros((N, 2))   # no music bed: the user adds their own track in-app
 
 # ---------------- foley from the page's events ----------------
 def ring(f, d=1.2, v=1.0):

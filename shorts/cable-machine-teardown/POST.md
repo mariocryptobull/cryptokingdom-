@@ -12,3 +12,5 @@ Sources: Wikipedia (Block and tackle); Fringe Sport, Rep Fitness, MuscleSquad an
 
 **On-screen hook (first 2 s):** "WHY DOES 50 LB FEEL LIGHTER?"
 **Pinned comment idea:** "What should we take apart next?"
+
+**Audio:** No music. Add your track in-app and keep it about 15–20 dB under the voice.
