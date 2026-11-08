@@ -19,7 +19,7 @@ const CW = 9288; // content width (DXA)
 // inline markup: **bold**, _italic_, `math`
 function runs(text, base = {}) {
   const out = [];
-  const re = /(\*\*[^*]+\*\*|_[^_]+_|`[^`]+`)/g;
+  const re = /(\*\*[^*]+\*\*|(?<![\w])_[^_]+_(?![\w])|`[^`]+`)/g;
   let last = 0, m;
   while ((m = re.exec(text))) {
     if (m.index > last) out.push(new TextRun({ text: text.slice(last, m.index), font: FONT, ...base }));

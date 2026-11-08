@@ -16,3 +16,7 @@
 ## Homework collection (`homework/`)
 - `ME231 Test 2 Homework Collection.docx`: all 24 assigned problems since Test #1 that are in the uploaded pages, one per page on engineering paper, in syllabus order. P6.103 and P6.124 are past book page 440 and are not included.
 - `crop_hw.py` (crop boxes), `build_hw.js` (docx).
+
+## Mock exam (`mock/`)
+- `ME231 Mock Test 2.docx`: 3 original problems × 5 parts (100 pts, 75 min) on engineering paper, then solutions with point breakdowns and an answer key.
+- `solve_mock.py` (answer check), `figs_mock.py` (sketches), `build_mock.js` (docx).
