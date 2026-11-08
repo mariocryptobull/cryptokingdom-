@@ -12,3 +12,7 @@
 ## Textbook practice set (`textbook/`)
 - `ME231 Test 2 Textbook Practice.docx`: 16 White 9th-ed problems (P3.117, 3.121, 3.126, 4.3, 4.17, 4.57, 4.80, 5.25, 5.31, 5.66, 5.71, 6.11, 6.14, 6.41, 6.44, 6.62) cropped onto engineering paper, plus step-by-step solutions.
 - `crop.py` (crop boxes, PDF points), `solve2.py` (answer check), `build2.js` (docx). The textbook PDF itself is not committed.
+
+## Homework collection (`homework/`)
+- `ME231 Test 2 Homework Collection.docx`: all 24 assigned problems since Test #1 that are in the uploaded pages, one per page on engineering paper, in syllabus order. P6.103 and P6.124 are past book page 440 and are not included.
+- `crop_hw.py` (crop boxes), `build_hw.js` (docx).
