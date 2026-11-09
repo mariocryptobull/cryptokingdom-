@@ -1,0 +1,62 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "How does a treadmill know how fast you're running? It counts. Let's take one apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Up front, a motor and its controller. A short drive belt and a heavy flywheel turn the front roller."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The running belt loops around two rollers and slides over a lubricated deck, sitting on rubber cushions that soften every landing."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Now the clever part. A small magnet on the roller sweeps past a sensor once per turn. Each pulse means one roller's circumference of belt."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "So, speed equals roller r p m times circumference. A two and a half inch roller at seven hundred r p m: about five miles an hour."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Each foot strike brakes the belt. The controller sees the pulses slow down and pushes more current until the speed recovers. Belts still dip four to nine percent."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "An incline motor turns a lead screw to tilt the deck. Pull the safety key, and the motor stops."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Why does it feel easier? There's no air to push through, and the belt pulls your feet back for you. A 1996 study found a one percent incline matches running outside."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered the treadmill."
+ }
+]

@@ -1,0 +1,105 @@
+{
+ "dur": 74.7,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "How does a treadmill know",
+    "how fast you're running?",
+    "It counts.",
+    "Let's take one apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.46,
+   "chunks": [
+    "Up front,",
+    "a motor and its controller.",
+    "A short drive belt and a heavy flywheel",
+    "turn the front roller."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 12.11,
+   "chunks": [
+    "The running belt",
+    "loops around two rollers",
+    "and slides over a lubricated deck,",
+    "sitting on rubber cushions",
+    "that soften every landing."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 20.45,
+   "chunks": [
+    "Now the clever part.",
+    "A small magnet on the roller",
+    "sweeps past a sensor once per turn.",
+    "Each pulse means",
+    "one roller's circumference of belt."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 29.44,
+   "chunks": [
+    "So, speed equals",
+    "roller RPM times circumference.",
+    "A 2.5-inch roller at 700 RPM:",
+    "about five miles an hour."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 39.36,
+   "chunks": [
+    "Each foot strike brakes the belt.",
+    "The controller sees the pulses slow down",
+    "and pushes more current",
+    "until the speed recovers.",
+    "Belts still dip four to nine percent."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 49.63,
+   "chunks": [
+    "An incline motor turns a lead screw",
+    "to tilt the deck.",
+    "Pull the safety key,",
+    "and the motor stops."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 56.25,
+   "chunks": [
+    "Why does it feel easier?",
+    "There's no air to push through,",
+    "and the belt pulls your feet back for you.",
+    "A 1996 study found",
+    "a one percent incline",
+    "matches running outside."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 67.72,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 70.12,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the treadmill."
+   ]
+  }
+ ]
+}
