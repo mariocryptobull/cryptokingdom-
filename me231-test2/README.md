@@ -20,3 +20,6 @@
 ## Mock exam (`mock/`)
 - `ME231 Mock Test 2.docx`: 3 original problems × 5 parts (100 pts, 75 min) on engineering paper, then solutions with point breakdowns and an answer key.
 - `solve_mock.py` (answer check), `figs_mock.py` (sketches), `build_mock.js` (docx).
+
+## Formula sheet (`cheatsheet/`)
+- `ME231 Test 2 Formula Sheet.docx`: 3-page, 2-column formula sheet for Lectures 12–20 (kinematics, Navier–Stokes exact solutions, Bernoulli/energy, Pi theorem and similarity, pipe flow, property tables, checklist). Built by `build_cheat.js`.
