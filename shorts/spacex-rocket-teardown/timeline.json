@@ -1,0 +1,113 @@
+{
+ "dur": 74.4,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "This is Starship,",
+    "the biggest rocket ever flown,",
+    "about four hundred feet tall.",
+    "Let's take it apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 6.67,
+   "chunks": [
+    "The bottom stage is Super Heavy:",
+    "thirty-three Raptor engines,",
+    "over eighteen million pounds of thrust",
+    "at liftoff."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 13.75,
+   "chunks": [
+    "Inside, stainless-steel tanks",
+    "hold super-cold liquid oxygen",
+    "and liquid methane."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 19.37,
+   "chunks": [
+    "Each Raptor runs",
+    "full-flow staged combustion:",
+    "two preburners",
+    "spin two turbopumps,",
+    "then everything burns in the chamber",
+    "and roars out the nozzle."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 28.9,
+   "chunks": [
+    "Why methane?",
+    "It burns cleaner than kerosene,",
+    "so engines can be reused.",
+    "And SpaceX plans to make it on Mars."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 36.68,
+   "chunks": [
+    "At staging, the ship ignites",
+    "through a vented ring.",
+    "The booster flies home on grid fins,",
+    "and the tower's arms catch it."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 44.55,
+   "chunks": [
+    "The ship has six Raptors:",
+    "three sea-level, three vacuum.",
+    "Hex tiles shield it,",
+    "and four flaps steer the fall."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 51.6,
+   "chunks": [
+    "In September, Flight 14",
+    "reached orbit and released",
+    "26 Starlink satellites",
+    "from its payload bay."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 58.45,
+   "chunks": [
+    "Next, SpaceX says:",
+    "refueling in orbit,",
+    "a Moon lander for NASA,",
+    "and then Mars.",
+    "Cargo first, then crews,",
+    "then a city."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 66.84,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 69.03,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the rocket built for Mars."
+   ]
+  }
+ ]
+}

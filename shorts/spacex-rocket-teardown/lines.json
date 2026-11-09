@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v01",
+  "text": "This is Starship, the biggest rocket ever flown, about four hundred feet tall. Let's take it apart.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v02",
+  "text": "The bottom stage is Super Heavy: thirty-three Raptor engines, over eighteen million pounds of thrust at liftoff.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v03",
+  "text": "Inside, stainless-steel tanks hold super-cold liquid oxygen and liquid methane.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v04",
+  "text": "Each Raptor runs full-flow staged combustion: two preburners spin two turbopumps, then everything burns in the chamber and roars out the nozzle.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v05",
+  "text": "Why methane? It burns cleaner than kerosene, so engines can be reused. And SpaceX plans to make it on Mars.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v06",
+  "text": "At staging, the ship ignites through a vented ring. The booster flies home on grid fins, and the tower's arms catch it.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v07",
+  "text": "The ship has six Raptors: three sea-level, three vacuum. Hex tiles shield it, and four flaps steer the fall.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v08",
+  "text": "In September, Flight fourteen reached orbit and released twenty-six Starlink satellites from its payload bay.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v09",
+  "text": "Next, SpaceX says: refueling in orbit, a Moon lander for NASA, and then Mars. Cargo first, then crews, then a city.",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v10",
+  "text": "What should we take apart next?",
+  "voice": "am_michael",
+  "speed": 1.12
+ },
+ {
+  "id": "v11",
+  "text": "Congrats! You've discovered the rocket built for Mars.",
+  "voice": "am_michael",
+  "speed": 1.12
+ }
+]
