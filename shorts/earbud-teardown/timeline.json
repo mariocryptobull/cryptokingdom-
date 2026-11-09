@@ -1,0 +1,119 @@
+{
+ "dur": 73.3,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "What's inside an AirPod?",
+    "We scaled one up a hundred times,",
+    "and took it apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.43,
+   "chunks": [
+    "Crack the glued shell,",
+    "and every part comes out."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 8.55,
+   "chunks": [
+    "First, the battery:",
+    "a tiny lithium-ion button cell.",
+    "In AirPods Pro 2,",
+    "about 50 milliamp-hours."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 15.64,
+   "chunks": [
+    "The main chip runs Bluetooth",
+    "and processes the sound.",
+    "A thin antenna catches",
+    "the signal from your phone."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 22.46,
+   "chunks": [
+    "Now the speaker.",
+    "A copper voice coil sits around a magnet.",
+    "Pulse current through it,",
+    "and the coil pushes the diaphragm",
+    "back and forth,",
+    "thousands of times a second."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 32.83,
+   "chunks": [
+    "Beamforming mics",
+    "aim at your voice,",
+    "and a tiny vent equalizes pressure,",
+    "so your ear doesn't feel plugged."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 39.73,
+   "chunks": [
+    "A force sensor in the stem",
+    "feels your squeeze,",
+    "and a skin sensor knows",
+    "when it's in your ear."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 45.56,
+   "chunks": [
+    "Now, noise cancellation.",
+    "The outer mic hears the noise.",
+    "The chip flips that wave upside down,",
+    "and the driver plays it.",
+    "Peak meets trough,",
+    "and they cancel out."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 55.74,
+   "chunks": [
+    "Apple says it re-tunes that",
+    "200 times a second."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 59.28,
+   "chunks": [
+    "The catch?",
+    "It's all glued shut.",
+    "iFixit gave them 0 out of 10",
+    "for repairability."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 65.38,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 67.78,
+   "chunks": [
+    "Congrats! You've discovered",
+    "what's inside your earbuds."
+   ]
+  }
+ ]
+}

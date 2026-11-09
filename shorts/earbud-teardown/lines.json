@@ -1,0 +1,74 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What's inside an AirPod? We scaled one up a hundred times, and took it apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Crack the glued shell, and every part comes out."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "First, the battery: a tiny lithium-ion button cell. In AirPods Pro 2, about fifty milliamp-hours."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The main chip runs Bluetooth and processes the sound. A thin antenna catches the signal from your phone."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Now the speaker. A copper voice coil sits around a magnet. Pulse current through it, and the coil pushes the diaphragm back and forth, thousands of times a second."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Beamforming mics aim at your voice, and a tiny vent equalizes pressure, so your ear doesn't feel plugged."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "A force sensor in the stem feels your squeeze, and a skin sensor knows when it's in your ear."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Now, noise cancellation. The outer mic hears the noise. The chip flips that wave upside down, and the driver plays it. Peak meets trough, and they cancel out."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Apple says it re-tunes that two hundred times a second."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The catch? It's all glued shut. iFixit gave them zero out of ten for repairability."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v12",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered what's inside your earbuds."
+ }
+]
