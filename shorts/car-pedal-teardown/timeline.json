@@ -1,0 +1,128 @@
+{
+ "dur": 74.8,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "How does pressing a pedal",
+    "make a car move?",
+    "Follow the force,",
+    "from foot to road."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 5.5,
+   "chunks": [
+    "Gas pedal first.",
+    "No cable:",
+    "two sensors read how far you press",
+    "and tell the engine computer."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 11.86,
+   "chunks": [
+    "A small motor opens the throttle.",
+    "Air rushes in,",
+    "and fuel is added,",
+    "about 14.7 to 1 by weight."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 19.68,
+   "chunks": [
+    "Each spark",
+    "shoves a piston down.",
+    "The crankshaft turns",
+    "those pushes into spin."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 24.63,
+   "chunks": [
+    "The gearbox and differential",
+    "multiply that twist:",
+    "about 14 to 1",
+    "in first gear."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 30.16,
+   "chunks": [
+    "Driveshaft and axles carry it",
+    "to four hand-sized patches of rubber",
+    "that push the road back.",
+    "The car goes forward."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 37.7,
+   "chunks": [
+    "Now the brake.",
+    "The pedal is a 4-to-1 lever:",
+    "a 100 lb push",
+    "becomes 400."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 43.71,
+   "chunks": [
+    "A vacuum booster",
+    "uses engine suction",
+    "to roughly double it.",
+    "800 pounds."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 49.01,
+   "chunks": [
+    "That drives a one-inch",
+    "master cylinder piston",
+    "into the brake fluid.",
+    "About 1,000 psi."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 55.04,
+   "chunks": [
+    "Pascal's law:",
+    "that pressure acts everywhere.",
+    "On caliper pistons six times bigger,",
+    "it's 5,000 lb of clamp, roughly."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 63.44,
+   "chunks": [
+    "The pads squeeze the rotors,",
+    "and motion turns into heat."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 67.4,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 69.6,
+   "chunks": [
+    "Congrats! You've discovered",
+    "how a pedal moves a car."
+   ]
+  }
+ ]
+}

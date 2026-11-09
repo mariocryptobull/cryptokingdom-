@@ -1,0 +1,21 @@
+How a Pedal Moves a Car — Exploded Teardown short (1080×1920, 75 s)
+
+Made in code: no AI-generated video, no stock footage. The car, engine, drivetrain and brake system are a schematic model built in three.js (not to scale; no brand logos).
+Facts and sources: FACTS.md.
+
+TOOLS
+- Lemo-Opuscar film-style library (Exploded Teardown style, core render/audio tools) — https://github.com/lemomo-ai/lemo-opuscar — MIT
+- three.js r170 — MIT
+
+LIGHT
+- photo_studio_loft_hall_2k.hdr — Poly Haven, CC0 — https://polyhaven.com/a/photo_studio_loft_hall
+
+FONTS (SIL Open Font License 1.1, texts in fonts/)
+- Inter — The Inter Project Authors
+- JetBrains Mono — JetBrains
+
+SOUND
+- Foley synthesised in code (mix.py). No samples. No music (added in-app).
+
+VOICE
+- Kokoro TTS v1.0 (Apache-2.0), voice am_michael.
