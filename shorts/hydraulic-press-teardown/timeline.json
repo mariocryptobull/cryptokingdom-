@@ -1,0 +1,122 @@
+{
+ "dur": 73.4,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "How does a hydraulic press",
+    "crush almost anything?",
+    "Your arm pushes.",
+    "The oil multiplies."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 6.52,
+   "chunks": [
+    "Here's a 20-ton shop press,",
+    "taken apart:",
+    "frame, hand pump, oil reservoir,",
+    "and one big cylinder."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 13.11,
+   "chunks": [
+    "Lift the handle:",
+    "a small piston sucks in oil",
+    "through a check valve.",
+    "Push down: it's forced out",
+    "through a second one."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 20.37,
+   "chunks": [
+    "It can't flow back,",
+    "so every stroke stacks more oil",
+    "on the big piston:",
+    "the ram."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 25.45,
+   "chunks": [
+    "Pascal's law:",
+    "squeeze a trapped liquid,",
+    "and the pressure is equal everywhere.",
+    "Force is pressure \u00d7 area."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 32.29,
+   "chunks": [
+    "Pump piston:",
+    "7/16 of an inch wide.",
+    "Ram: 2\u00bc inches.",
+    "26 times the area."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 39.11,
+   "chunks": [
+    "The handle turns a 90-lb pull",
+    "into 1,500 lb",
+    "on the small piston:",
+    "10,000 psi.",
+    "On the ram, 40,000 lb.",
+    "Twenty tons."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 49.88,
+   "chunks": [
+    "The catch?",
+    "Each stroke moves the ram",
+    "about a millimeter.",
+    "You trade distance for force."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 55.22,
+   "chunks": [
+    "A gauge reads the pressure.",
+    "A release valve",
+    "lets the oil drain back."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 59.71,
+   "chunks": [
+    "And a soda can?",
+    "It buckles at about 200 lb.",
+    "Half a percent",
+    "of this press."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 66.52,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 68.61,
+   "chunks": [
+    "Congrats! You've discovered",
+    "the hydraulic press."
+   ]
+  }
+ ]
+}

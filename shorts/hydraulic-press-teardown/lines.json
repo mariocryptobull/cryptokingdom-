@@ -1,0 +1,74 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "How does a hydraulic press crush almost anything? Your arm pushes. The oil multiplies."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "Here's a twenty-ton shop press, taken apart: frame, hand pump, oil reservoir, and one big cylinder."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "Lift the handle: a small piston sucks in oil through a check valve. Push down: it's forced out through a second one."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "It can't flow back, so every stroke stacks more oil on the big piston: the ram."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "Pascal's law: squeeze a trapped liquid, and the pressure is equal everywhere. Force is pressure times area."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "Pump piston: seven sixteenths of an inch wide. Ram: two and a quarter. Twenty-six times the area."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "The handle turns a ninety-pound pull into fifteen hundred pounds on the small piston: ten thousand P S I. On the ram, forty thousand pounds. Twenty tons."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "The catch? Each stroke moves the ram about a millimeter. You trade distance for force."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "A gauge reads the pressure. A release valve lets the oil drain back."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "And a soda can? It buckles at about two hundred pounds. Half a percent of this press."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v12",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "text": "Congrats! You've discovered the hydraulic press."
+ }
+]
