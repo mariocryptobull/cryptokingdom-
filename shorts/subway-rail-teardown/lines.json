@@ -1,0 +1,80 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "New York's subway runs on two steel rails. Let's take the track apart."
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The running rails: about a hundred fifteen pounds of steel per yard, four feet eight and a half inches apart."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Tie plates fix them to wooden ties or concrete blocks, on ballast or concrete."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Beside them, the third rail: six hundred twenty-five volts DC, under a cover board."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "A contact shoe on the truck slides along it, to power the traction motors."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The wheels aren't flat. Each tread is a slight cone, with a flange on the inside."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "In a curve, the outer wheel rides its wider part and covers more ground. The train steers itself."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "All that weight sits on contact patches about the size of a dime."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "The wheels also short the two rails. That track circuit tells the signals a train is there."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "That's why roof riding kills. Tunnel ceilings sit inches above the car. Curves and braking throw you. Below: six hundred twenty-five volts."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Six people died subway surfing in twenty twenty-four. At least five in twenty twenty-five. Subway surfing kills. Don't."
+ },
+ {
+  "id": "v12",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "What should we take apart next?"
+ },
+ {
+  "id": "v13",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "text": "Congrats! You've discovered how a subway train rides its rails."
+ }
+]

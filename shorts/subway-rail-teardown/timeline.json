@@ -1,0 +1,125 @@
+{
+ "dur": 74.8,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "New York's subway",
+    "runs on two steel rails.",
+    "Let's take the track apart."
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 4.94,
+   "chunks": [
+    "The running rails:",
+    "about 115 pounds of steel per yard,",
+    "4 feet 8\u00bd inches apart."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 11.62,
+   "chunks": [
+    "Tie plates fix them",
+    "to wooden ties or concrete blocks,",
+    "on ballast or concrete."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 16.87,
+   "chunks": [
+    "Beside them, the third rail:",
+    "625 volts DC,",
+    "under a cover board."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 22.45,
+   "chunks": [
+    "A contact shoe on the truck",
+    "slides along it,",
+    "to power the traction motors."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 27.21,
+   "chunks": [
+    "The wheels aren't flat.",
+    "Each tread is a slight cone,",
+    "with a flange on the inside."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 32.28,
+   "chunks": [
+    "In a curve, the outer wheel",
+    "rides its wider part",
+    "and covers more ground.",
+    "The train steers itself."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 38.57,
+   "chunks": [
+    "All that weight sits",
+    "on contact patches",
+    "about the size of a dime."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 42.74,
+   "chunks": [
+    "The wheels also",
+    "short the two rails.",
+    "That track circuit tells the signals",
+    "a train is there."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 48.5,
+   "chunks": [
+    "That's why roof riding kills.",
+    "Tunnel ceilings sit",
+    "inches above the car.",
+    "Curves and braking throw you.",
+    "Below: 625 volts."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 58.08,
+   "chunks": [
+    "Six people died subway surfing",
+    "in 2024.",
+    "At least five in 2025.",
+    "Subway surfing kills.",
+    "Don't."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 66.6,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 68.65,
+   "chunks": [
+    "Congrats! You've discovered",
+    "how a subway train rides its rails."
+   ]
+  }
+ ]
+}
