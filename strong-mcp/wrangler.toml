@@ -1,0 +1,14 @@
+name = "strong-mcp"
+main = "src/index.ts"
+compatibility_date = "2025-10-01"
+
+[vars]
+# Optional. If set, used instead of searching for a folder by name.
+# DRIVE_FOLDER_ID = ""
+DRIVE_FOLDER_NAME = "Strong Exports"
+# Timezone your Strong timestamps are in (used for "last N days" / "this week").
+TIMEZONE = "America/New_York"
+
+# Secrets (set with `npx wrangler secret put <NAME>`, never commit):
+#   GOOGLE_SERVICE_ACCOUNT_JSON  - full JSON key of the service account
+#   MCP_PATH_SECRET              - long random string; connector URL is /mcp/<secret>

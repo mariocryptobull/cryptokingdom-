@@ -1,0 +1,748 @@
+{
+  "_readme": "Exercise names match Strong exactly, or by base name with the equipment suffix stripped ('Lateral Raise (Cable)' -> 'Lateral Raise'). Muscles: chest, back, side_delts, rear_delts, front_delts, biceps, triceps, forearms, quads, hamstrings, glutes, calves, abs. Primary = 1 set, secondary = 0.5 set. 'ignore' = no volume and never flagged. 'mainLifts' = lifts checked by progression_check with their rep range (if empty, auto-detected).",
+  "exercises": {
+    "Bench Press": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "triceps",
+        "front_delts"
+      ]
+    },
+    "Incline Bench Press": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "front_delts",
+        "triceps"
+      ]
+    },
+    "Decline Bench Press": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "triceps"
+      ]
+    },
+    "Chest Press": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "triceps",
+        "front_delts"
+      ]
+    },
+    "Incline Chest Press": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "front_delts",
+        "triceps"
+      ]
+    },
+    "Chest Fly": {
+      "primary": [
+        "chest"
+      ]
+    },
+    "Incline Chest Fly": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "front_delts"
+      ]
+    },
+    "Pec Deck": {
+      "primary": [
+        "chest"
+      ]
+    },
+    "Cable Crossover": {
+      "primary": [
+        "chest"
+      ]
+    },
+    "Chest Dip": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "triceps",
+        "front_delts"
+      ]
+    },
+    "Push Up": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "triceps",
+        "front_delts"
+      ]
+    },
+    "Floor Press": {
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "triceps"
+      ]
+    },
+    "Overhead Press": {
+      "primary": [
+        "front_delts"
+      ],
+      "secondary": [
+        "triceps",
+        "side_delts"
+      ]
+    },
+    "Shoulder Press": {
+      "primary": [
+        "front_delts"
+      ],
+      "secondary": [
+        "triceps",
+        "side_delts"
+      ]
+    },
+    "Seated Overhead Press": {
+      "primary": [
+        "front_delts"
+      ],
+      "secondary": [
+        "triceps",
+        "side_delts"
+      ]
+    },
+    "Arnold Press": {
+      "primary": [
+        "front_delts"
+      ],
+      "secondary": [
+        "side_delts",
+        "triceps"
+      ]
+    },
+    "Push Press": {
+      "primary": [
+        "front_delts"
+      ],
+      "secondary": [
+        "triceps",
+        "quads"
+      ]
+    },
+    "Lateral Raise": {
+      "primary": [
+        "side_delts"
+      ]
+    },
+    "Single Arm Lateral Raise": {
+      "primary": [
+        "side_delts"
+      ]
+    },
+    "Upright Row": {
+      "primary": [
+        "side_delts"
+      ],
+      "secondary": [
+        "biceps"
+      ]
+    },
+    "Front Raise": {
+      "primary": [
+        "front_delts"
+      ]
+    },
+    "Reverse Fly": {
+      "primary": [
+        "rear_delts"
+      ]
+    },
+    "Rear Delt Fly": {
+      "primary": [
+        "rear_delts"
+      ]
+    },
+    "Face Pull": {
+      "primary": [
+        "rear_delts"
+      ],
+      "secondary": [
+        "side_delts"
+      ]
+    },
+    "Shrug": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "forearms"
+      ]
+    },
+    "Pull Up": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Chin Up": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps"
+      ]
+    },
+    "Lat Pulldown": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Lat Pulldown - Underhand": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps"
+      ]
+    },
+    "Lat Pulldown - Wide Grip": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Bent Over Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Bent Over One Arm Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Pendlay Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Seated Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Seated Wide-Grip Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "rear_delts",
+        "biceps"
+      ]
+    },
+    "T Bar Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Incline Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Chest Supported Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Inverted Row": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "biceps",
+        "rear_delts"
+      ]
+    },
+    "Straight Arm Pulldown": {
+      "primary": [
+        "back"
+      ]
+    },
+    "Pullover": {
+      "primary": [
+        "back"
+      ],
+      "secondary": [
+        "chest"
+      ]
+    },
+    "Deadlift": {
+      "primary": [
+        "hamstrings",
+        "glutes",
+        "back"
+      ],
+      "secondary": [
+        "quads",
+        "forearms"
+      ]
+    },
+    "Rack Pull": {
+      "primary": [
+        "back",
+        "glutes"
+      ],
+      "secondary": [
+        "hamstrings",
+        "forearms"
+      ]
+    },
+    "Back Extension": {
+      "primary": [
+        "hamstrings",
+        "glutes"
+      ]
+    },
+    "Good Morning": {
+      "primary": [
+        "hamstrings"
+      ],
+      "secondary": [
+        "glutes"
+      ]
+    },
+    "Bicep Curl": {
+      "primary": [
+        "biceps"
+      ],
+      "secondary": [
+        "forearms"
+      ]
+    },
+    "EZ Bar Curl": {
+      "primary": [
+        "biceps"
+      ],
+      "secondary": [
+        "forearms"
+      ]
+    },
+    "Hammer Curl": {
+      "primary": [
+        "biceps",
+        "forearms"
+      ]
+    },
+    "Preacher Curl": {
+      "primary": [
+        "biceps"
+      ]
+    },
+    "Concentration Curl": {
+      "primary": [
+        "biceps"
+      ]
+    },
+    "Incline Curl": {
+      "primary": [
+        "biceps"
+      ]
+    },
+    "Spider Curl": {
+      "primary": [
+        "biceps"
+      ]
+    },
+    "Bayesian Curl": {
+      "primary": [
+        "biceps"
+      ]
+    },
+    "Drag Curl": {
+      "primary": [
+        "biceps"
+      ]
+    },
+    "Reverse Curl": {
+      "primary": [
+        "forearms"
+      ],
+      "secondary": [
+        "biceps"
+      ]
+    },
+    "Wrist Curl": {
+      "primary": [
+        "forearms"
+      ]
+    },
+    "Reverse Wrist Curl": {
+      "primary": [
+        "forearms"
+      ]
+    },
+    "Farmers Walk": {
+      "primary": [
+        "forearms"
+      ],
+      "secondary": [
+        "back"
+      ]
+    },
+    "Triceps Pushdown": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Triceps Extension": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Overhead Triceps Extension": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Skullcrusher": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Triceps Dip": {
+      "primary": [
+        "triceps"
+      ],
+      "secondary": [
+        "chest",
+        "front_delts"
+      ]
+    },
+    "Bench Dip": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Bench Press - Close Grip": {
+      "primary": [
+        "triceps",
+        "chest"
+      ],
+      "secondary": [
+        "front_delts"
+      ]
+    },
+    "Close Grip Bench Press": {
+      "primary": [
+        "triceps",
+        "chest"
+      ],
+      "secondary": [
+        "front_delts"
+      ]
+    },
+    "JM Press": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Kickback": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Triceps Kickback": {
+      "primary": [
+        "triceps"
+      ]
+    },
+    "Squat": {
+      "primary": [
+        "quads",
+        "glutes"
+      ],
+      "secondary": [
+        "hamstrings"
+      ]
+    },
+    "Front Squat": {
+      "primary": [
+        "quads"
+      ],
+      "secondary": [
+        "glutes"
+      ]
+    },
+    "Hack Squat": {
+      "primary": [
+        "quads"
+      ],
+      "secondary": [
+        "glutes"
+      ]
+    },
+    "Pendulum Squat": {
+      "primary": [
+        "quads"
+      ],
+      "secondary": [
+        "glutes"
+      ]
+    },
+    "Goblet Squat": {
+      "primary": [
+        "quads"
+      ],
+      "secondary": [
+        "glutes"
+      ]
+    },
+    "Leg Press": {
+      "primary": [
+        "quads"
+      ],
+      "secondary": [
+        "glutes"
+      ]
+    },
+    "Leg Extension": {
+      "primary": [
+        "quads"
+      ]
+    },
+    "Bulgarian Split Squat": {
+      "primary": [
+        "quads",
+        "glutes"
+      ]
+    },
+    "Split Squat": {
+      "primary": [
+        "quads",
+        "glutes"
+      ]
+    },
+    "Lunge": {
+      "primary": [
+        "quads",
+        "glutes"
+      ]
+    },
+    "Walking Lunge": {
+      "primary": [
+        "quads",
+        "glutes"
+      ]
+    },
+    "Step-up": {
+      "primary": [
+        "quads",
+        "glutes"
+      ]
+    },
+    "Romanian Deadlift": {
+      "primary": [
+        "hamstrings",
+        "glutes"
+      ],
+      "secondary": [
+        "back"
+      ]
+    },
+    "Stiff Leg Deadlift": {
+      "primary": [
+        "hamstrings",
+        "glutes"
+      ],
+      "secondary": [
+        "back"
+      ]
+    },
+    "Lying Leg Curl": {
+      "primary": [
+        "hamstrings"
+      ]
+    },
+    "Seated Leg Curl": {
+      "primary": [
+        "hamstrings"
+      ]
+    },
+    "Leg Curl": {
+      "primary": [
+        "hamstrings"
+      ]
+    },
+    "Nordic Curl": {
+      "primary": [
+        "hamstrings"
+      ]
+    },
+    "Hip Thrust": {
+      "primary": [
+        "glutes"
+      ],
+      "secondary": [
+        "hamstrings"
+      ]
+    },
+    "Glute Bridge": {
+      "primary": [
+        "glutes"
+      ],
+      "secondary": [
+        "hamstrings"
+      ]
+    },
+    "Glute Kickback": {
+      "primary": [
+        "glutes"
+      ]
+    },
+    "Hip Abductor": {
+      "primary": [
+        "glutes"
+      ]
+    },
+    "Standing Calf Raise": {
+      "primary": [
+        "calves"
+      ]
+    },
+    "Seated Calf Raise": {
+      "primary": [
+        "calves"
+      ]
+    },
+    "Calf Raise": {
+      "primary": [
+        "calves"
+      ]
+    },
+    "Calf Press on Leg Press": {
+      "primary": [
+        "calves"
+      ]
+    },
+    "Crunch": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Cable Crunch": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Decline Crunch": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Hanging Leg Raise": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Hanging Knee Raise": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Leg Raise": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Ab Wheel": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Plank": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Russian Twist": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Sit Up": {
+      "primary": [
+        "abs"
+      ]
+    },
+    "Cable Woodchop": {
+      "primary": [
+        "abs"
+      ]
+    }
+  },
+  "ignore": [
+    "Running",
+    "Cycling",
+    "Walking",
+    "Rowing",
+    "Elliptical Trainer",
+    "Stair Climber",
+    "Stretching",
+    "Warm Up",
+    "Jump Rope"
+  ],
+  "mainLifts": {},
+  "flags": {
+    "maxDurationMin": 120,
+    "maxDropSets": 3
+  }
+}

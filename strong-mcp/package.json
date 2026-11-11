@@ -1,0 +1,21 @@
+{
+  "name": "strong-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "check-map": "vite-node scripts/check-map.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20251014.0",
+    "@types/node": "22.10.2",
+    "typescript": "5.9.3",
+    "vite-node": "3.2.4",
+    "vitest": "3.2.7",
+    "wrangler": "4.45.0"
+  }
+}
