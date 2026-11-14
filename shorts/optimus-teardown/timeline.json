@@ -1,0 +1,134 @@
+{
+ "dur": 61.7,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.4,
+   "chunks": [
+    "How will robots",
+    "rise to power?"
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 2.83,
+   "chunks": [
+    "This is",
+    "Elon Musk's Optimus.",
+    "And you see,",
+    "it wasn't built to rule.",
+    "It was built to work."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 8.37,
+   "chunks": [
+    "So what's inside?",
+    "28 actuators.",
+    "Six designs.",
+    "Three rotary,",
+    "three linear."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 13.68,
+   "chunks": [
+    "Rotary ones",
+    "twist the joints.",
+    "Linear ones push,",
+    "like muscles."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 17.65,
+   "chunks": [
+    "And inside those?",
+    "Planetary roller screws.",
+    "One lifted",
+    "a half-tonne piano."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 22.38,
+   "chunks": [
+    "The hands?",
+    "22 degrees of freedom.",
+    "Double the first version."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 26.25,
+   "chunks": [
+    "Power?",
+    "A 2.3 kWh pack,",
+    "right in the torso."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 29.97,
+   "chunks": [
+    "Eyes?",
+    "Autopilot cameras.",
+    "Brain?",
+    "Tesla's self-driving computer."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 34.48,
+   "chunks": [
+    "How does it learn?",
+    "Humans show it.",
+    "Suits, cameras, real tasks.",
+    "Then it practises",
+    "in simulation."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 40.28,
+   "chunks": [
+    "The plan?",
+    "Tesla's factories first.",
+    "Then other companies.",
+    "Homes, later."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 44.76,
+   "chunks": [
+    "The goals?",
+    "A line built for",
+    "20,000 a week.",
+    "And a price of",
+    "$20\u201330 thousand."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 51.03,
+   "chunks": [
+    "Of course,",
+    "they won't rise to power.",
+    "But it's beautiful to watch",
+    "the rise of robots",
+    "in our lifetime."
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 57.06,
+   "chunks": [
+    "What should we",
+    "take apart next?"
+   ]
+  }
+ ]
+}

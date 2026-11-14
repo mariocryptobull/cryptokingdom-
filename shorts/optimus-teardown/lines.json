@@ -1,0 +1,15 @@
+[
+ {"id":"v01","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"How will robots rise to power?"},
+ {"id":"v02","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"This is Elon Musk's Optimus. And you see, it wasn't built to rule. It was built to work."},
+ {"id":"v03","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"So what's inside? Twenty-eight actuators. Six designs. Three rotary, three linear."},
+ {"id":"v04","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"Rotary ones twist the joints. Linear ones push, like muscles."},
+ {"id":"v05","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"And inside those? Planetary roller screws. One lifted a half-tonne piano."},
+ {"id":"v06","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"The hands? Twenty-two degrees of freedom. Double the first version."},
+ {"id":"v07","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"Power? A two point three kilowatt-hour pack, right in the torso."},
+ {"id":"v08","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"Eyes? Autopilot cameras. Brain? Tesla's self-driving computer."},
+ {"id":"v09","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"How does it learn? Humans show it. Suits, cameras, real tasks. Then it practises in simulation."},
+ {"id":"v10","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"The plan? Tesla's factories first. Then other companies. Homes, later."},
+ {"id":"v11","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"The goals? A line built for twenty thousand a week. And a price of twenty to thirty thousand dollars."},
+ {"id":"v12","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"Of course, they won't rise to power. But it's beautiful to watch the rise of robots in our lifetime."},
+ {"id":"v13","voice":"bm_george","speed":1.2,"lang":"en-gb","text":"What should we take apart next?"}
+]
