@@ -1,0 +1,165 @@
+{
+ "dur": 74.9,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.3,
+   "chunks": [
+    "Will AI bring about",
+    "nuclear disaster?"
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 3.27,
+   "chunks": [
+    "This is Three Mile Island,",
+    "home of America's",
+    "worst nuclear accident.",
+    "And you see, AI is",
+    "bringing it back to life."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 10.26,
+   "chunks": [
+    "Microsoft signed",
+    "a 20-year deal",
+    "to restart Unit 1."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 13.88,
+   "chunks": [
+    "Why?",
+    "Let's take it apart."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 15.52,
+   "chunks": [
+    "Uranium pellets",
+    "in fuel rods split atoms.",
+    "That makes heat."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 19.42,
+   "chunks": [
+    "Control rods",
+    "soak up neutrons.",
+    "Slide them in, it slows."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 23.16,
+   "chunks": [
+    "The pressure vessel keeps",
+    "the water from boiling."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 25.88,
+   "chunks": [
+    "Hot water loops",
+    "to the steam generator,",
+    "and boils a second loop."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 29.82,
+   "chunks": [
+    "Steam spins the turbine,",
+    "which spins the generator."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 33.19,
+   "chunks": [
+    "Cooling towers dump",
+    "the leftover heat."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 35.67,
+   "chunks": [
+    "Heat, steam, spin, power.",
+    "Then, GPUs."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 38.51,
+   "chunks": [
+    "835 megawatts,",
+    "24/7,",
+    "carbon-free."
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 42.52,
+   "chunks": [
+    "Why now?",
+    "AI is hungry."
+   ]
+  },
+  {
+   "id": "v14",
+   "t": 44.43,
+   "chunks": [
+    "In 2023, data centers used",
+    "4.4% of US power.",
+    "2028?",
+    "Up to 12."
+   ]
+  },
+  {
+   "id": "v15",
+   "t": 51.19,
+   "chunks": [
+    "Google and Amazon plan",
+    "small modular reactors:",
+    "Google's first by 2030,",
+    "Amazon 5 gigawatts by 2039."
+   ]
+  },
+  {
+   "id": "v16",
+   "t": 59.02,
+   "chunks": [
+    "The catch?",
+    "$1.6 billion to restart,",
+    "years to build new ones,",
+    "and waste with no permanent home."
+   ]
+  },
+  {
+   "id": "v17",
+   "t": 65.61,
+   "chunks": [
+    "Of course,",
+    "AI won't cause a meltdown.",
+    "But the future of AI",
+    "might run on a plant from the past."
+   ]
+  },
+  {
+   "id": "v18",
+   "t": 71.53,
+   "chunks": [
+    "What should we",
+    "take apart next?"
+   ]
+  }
+ ]
+}

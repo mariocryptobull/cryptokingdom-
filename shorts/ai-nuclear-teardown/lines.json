@@ -1,0 +1,128 @@
+[
+ {
+  "id": "v01",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Will AI bring about nuclear disaster?",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v02",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "This is Three Mile Island, home of America's worst nuclear accident. And you see, AI is bringing it back to life.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v03",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Microsoft signed a twenty-year deal to restart Unit One.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v04",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Why? Let's take it apart.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v05",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Uranium pellets in fuel rods split atoms. That makes heat.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v06",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Control rods soak up neutrons. Slide them in, it slows.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v07",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "The pressure vessel keeps the water from boiling.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v08",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Hot water loops to the steam generator, and boils a second loop.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v09",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Steam spins the turbine, which spins the generator.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v10",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Cooling towers dump the leftover heat.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v11",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Heat, steam, spin, power. Then, GPUs.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v12",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Eight hundred thirty-five megawatts, twenty-four seven, carbon-free.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v13",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Why now? AI is hungry.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v14",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "In twenty twenty-three, data centers used four point four percent of US power. Twenty twenty-eight? Up to twelve.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v15",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Google and Amazon plan small modular reactors: Google's first by twenty thirty, Amazon five gigawatts by twenty thirty-nine.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v16",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "The catch? One point six billion dollars to restart, years to build new ones, and waste with no permanent home.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v17",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Of course, AI won't cause a meltdown. But the future of AI might run on a plant from the past.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v18",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "What should we take apart next?",
+  "lang": "en-gb"
+ }
+]
