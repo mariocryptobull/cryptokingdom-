@@ -1,0 +1,100 @@
+[
+ {
+  "id": "v01",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Is AI drinking the planet dry?"
+ },
+ {
+  "id": "v02",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "This is an AI data center. And you see, its chips run so hot they have to drink to survive."
+ },
+ {
+  "id": "v03",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Inside: racks of GPUs. One rack pulls a hundred and twenty kilowatts."
+ },
+ {
+  "id": "v04",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Air can't keep up. So the cooling goes straight to the chip."
+ },
+ {
+  "id": "v05",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Cold plates sit on every GPU. Coolant flows through, and carries the heat away."
+ },
+ {
+  "id": "v06",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "That loop dumps its heat into a chiller. Then up to the roof."
+ },
+ {
+  "id": "v07",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Cooling towers. This is where water is lost. It evaporates, and the heat leaves as vapour."
+ },
+ {
+  "id": "v08",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "How much? Operators measure litres per kilowatt-hour. Amazon reports zero point one five. Microsoft, zero point two seven."
+ },
+ {
+  "id": "v09",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "But that's only half the bill. Power plants drink too. In America, that hidden water is twelve times bigger."
+ },
+ {
+  "id": "v10",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "So, one prompt? Google says about five drops."
+ },
+ {
+  "id": "v11",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "One big data center? Up to five million gallons a day."
+ },
+ {
+  "id": "v12",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "The fixes? Closed loops that never evaporate. Dry coolers instead of towers. And cooler climates."
+ },
+ {
+  "id": "v13",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Of course, one question won't drain a river. But billions a day? That adds up."
+ },
+ {
+  "id": "v14",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "What should we take apart next?"
+ }
+]

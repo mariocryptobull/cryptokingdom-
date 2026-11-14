@@ -1,0 +1,138 @@
+{
+ "dur": 65.6,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.3,
+   "chunks": [
+    "Is AI drinking",
+    "the planet dry?"
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 2.84,
+   "chunks": [
+    "This is an AI data center.",
+    "And you see, its chips",
+    "run so hot",
+    "they have to drink to survive."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 8.77,
+   "chunks": [
+    "Inside: racks of GPUs.",
+    "One rack pulls",
+    "120 kilowatts."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 13.38,
+   "chunks": [
+    "Air can't keep up.",
+    "So the cooling goes",
+    "straight to the chip."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 16.51,
+   "chunks": [
+    "Cold plates",
+    "sit on every GPU.",
+    "Coolant flows through,",
+    "and carries the heat away."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 21.58,
+   "chunks": [
+    "That loop dumps its heat",
+    "into a chiller.",
+    "Then up to the roof."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 25.08,
+   "chunks": [
+    "Cooling towers.",
+    "This is where water is lost.",
+    "It evaporates,",
+    "and the heat leaves as vapour."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 30.36,
+   "chunks": [
+    "How much?",
+    "Operators measure",
+    "litres per kilowatt-hour.",
+    "Amazon reports 0.15.",
+    "Microsoft, 0.27."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 38.22,
+   "chunks": [
+    "But that's only half the bill.",
+    "Power plants drink too.",
+    "In America, that hidden water",
+    "is 12 times bigger."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 44.4,
+   "chunks": [
+    "So, one prompt?",
+    "Google says",
+    "about five drops."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 47.45,
+   "chunks": [
+    "One big data center?",
+    "Up to five million gallons",
+    "a day."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 51.13,
+   "chunks": [
+    "The fixes?",
+    "Closed loops",
+    "that never evaporate.",
+    "Dry coolers instead of towers.",
+    "And cooler climates."
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 57.13,
+   "chunks": [
+    "Of course, one question",
+    "won't drain a river.",
+    "But billions a day?",
+    "That adds up."
+   ]
+  },
+  {
+   "id": "v14",
+   "t": 61.65,
+   "chunks": [
+    "What should we",
+    "take apart next?"
+   ]
+  }
+ ]
+}
