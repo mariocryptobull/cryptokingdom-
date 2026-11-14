@@ -1,0 +1,151 @@
+{
+ "dur": 70.6,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.35,
+   "chunks": [
+    "What happens when computers",
+    "start using human brains?"
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 4.06,
+   "chunks": [
+    "This is a biocomputer.",
+    "And you see,",
+    "those are real human neurons.",
+    "Alive. On a chip."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 9.43,
+   "chunks": [
+    "Where from?",
+    "Stem cells,",
+    "grown into neurons on the chip."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 12.76,
+   "chunks": [
+    "Under them, a grid",
+    "of 59 electrodes."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 15.59,
+   "chunks": [
+    "The silicon talks to them.",
+    "Pulses in.",
+    "Spikes out."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 18.85,
+   "chunks": [
+    "But neurons need a body.",
+    "So the box becomes one."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 21.91,
+   "chunks": [
+    "Pumps feed them.",
+    "Filters pull out waste.",
+    "Gas mixing lets them breathe.",
+    "Heat keeps body temperature."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 27.89,
+   "chunks": [
+    "They live up to six months."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 29.6,
+   "chunks": [
+    "But can they learn?",
+    "In 2022, about 800,000 neurons",
+    "in a dish",
+    "learned Pong."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 35.27,
+   "chunks": [
+    "Hit the ball?",
+    "Predictable feedback.",
+    "Miss? Random noise.",
+    "They learned to rally."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 39.88,
+   "chunks": [
+    "That was DishBrain.",
+    "Its successor, the CL1,",
+    "sells for $35,000."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 45.35,
+   "chunks": [
+    "Or rent one.",
+    "Swiss startup FinalSpark",
+    "streams 16 living mini-brains",
+    "online."
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 50.51,
+   "chunks": [
+    "Why bother? Power.",
+    "Your brain runs on",
+    "about 20 watts.",
+    "AI data centers draw",
+    "hundreds of megawatts."
+   ]
+  },
+  {
+   "id": "v14",
+   "t": 56.67,
+   "chunks": [
+    "FinalSpark claims",
+    "a million times less energy.",
+    "Not proven yet."
+   ]
+  },
+  {
+   "id": "v15",
+   "t": 60.87,
+   "chunks": [
+    "Of course,",
+    "it can't think like you.",
+    "Yet.",
+    "But for the first time,",
+    "a computer is grown, not built."
+   ]
+  },
+  {
+   "id": "v16",
+   "t": 66.57,
+   "chunks": [
+    "What should we take apart next?"
+   ]
+  }
+ ]
+}

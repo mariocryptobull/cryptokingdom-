@@ -1,0 +1,114 @@
+[
+ {
+  "id": "v01",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "What happens when computers start using human brains?",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v02",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "This is a biocomputer. And you see, those are real human neurons. Alive. On a chip.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v03",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Where from? Stem cells, grown into neurons on the chip.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v04",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Under them, a grid of fifty nine electrodes.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v05",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "The silicon talks to them. Pulses in. Spikes out.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v06",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "But neurons need a body. So the box becomes one.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v07",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Pumps feed them. Filters pull out waste. Gas mixing lets them breathe. Heat keeps body temperature.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v08",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "They live up to six months.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v09",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "But can they learn? In twenty twenty two, about eight hundred thousand neurons in a dish learned Pong.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v10",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Hit the ball? Predictable feedback. Miss? Random noise. They learned to rally.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v11",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "That was DishBrain. Its successor, the CL one, sells for thirty five thousand dollars.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v12",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Or rent one. Swiss startup FinalSpark streams sixteen living mini brains online.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v13",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Why bother? Power. Your brain runs on about twenty watts. AI data centers draw hundreds of megawatts.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v14",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "FinalSpark claims a million times less energy. Not proven yet.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v15",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "Of course, it can't think like you. Yet. But for the first time, a computer is grown, not built.",
+  "lang": "en-gb"
+ },
+ {
+  "id": "v16",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "text": "What should we take apart next?",
+  "lang": "en-gb"
+ }
+]
