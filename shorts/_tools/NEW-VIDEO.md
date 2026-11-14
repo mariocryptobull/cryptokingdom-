@@ -6,7 +6,7 @@ Paste into a new Claude Code session (one video per session; they render in para
 
 ## House rules
 - 1080×1920, 60–75 s, English captions, delivered in chat with SendUserFile (phone copy).
-- Voice: Kokoro `am_michael`, speed ~1.0–1.08 (trim to fit 60–75 s).
+- Voice: Kokoro `bm_george` (British), speed 1.2, `"lang": "en-gb"` in lines.json. Punchy writing: short lines (2–8 words), questions answered instantly. Tight gaps in retime.py (~0.1–0.2 s between lines, ~0.4 s after the hook).
 - Styles: Exploded Teardown (template: `shorts/tbm-teardown`, `shorts/bliss-st-teardown`) or PS1 low-poly with the orange tabby cat (template: `shorts/subway-ps1`).
 - Music: NONE by default (the user adds their own house track in-app). In mix.py set `mus = np.zeros((N, 2))`; keep voice + foley, -14 LUFS. Add to POST.md: "No music: add your track in-app, ~15–20 dB under the voice." (Deep house bed `house2.bed('deep', ...)` only if asked.)
 - Structure: open with a dramatic, hard-hitting question (spoken + on-screen hook), then answer it starting with "You see, …", then explain and tear down. End on the "What should we take apart next?" beat. NEVER use a "Congrats! You've discovered …" line.
