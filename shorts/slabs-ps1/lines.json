@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v01",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Every floor has to send its weight somewhere. So which beams actually feel this cat?"
+ },
+ {
+  "id": "v02",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "The piece of floor each beam carries is called its tributary area."
+ },
+ {
+  "id": "v03",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "First, check the panel's shape. Divide the long side by the short side."
+ },
+ {
+  "id": "v04",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Eighteen by six is a ratio of three. More than two means a one-way slab."
+ },
+ {
+  "id": "v05",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "The load runs straight across to the two long beams. Each one carries half the short span: a uniform load."
+ },
+ {
+  "id": "v06",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Now squish it closer to square. Twelve by nine is about one point three. Two or less means two-way."
+ },
+ {
+  "id": "v07",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Draw forty-five degree lines from every corner. Now the load flows to all four edges."
+ },
+ {
+  "id": "v08",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "The short beams get triangles. The long beams get trapezoids."
+ },
+ {
+  "id": "v09",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Same floor, same load per square foot. Just a different shape, and a different load path."
+ },
+ {
+  "id": "v10",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Long and skinny, one way. Close to square, two ways."
+ },
+ {
+  "id": "v11",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "text": "Congrats! You've discovered tributary loads!"
+ }
+]

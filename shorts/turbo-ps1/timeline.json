@@ -1,0 +1,16 @@
+{
+  "dur": 61.0,
+  "vo": [
+    {"id": "v01", "t": 0.4,  "chunks": ["This little metal snail", "can make an engine", "way stronger.", "And it runs on", "the engine's own exhaust."]},
+    {"id": "v02", "t": 7.6,  "chunks": ["Let's take it apart."]},
+    {"id": "v03", "t": 11.2, "chunks": ["Hot exhaust blasts", "through the turbine side", "and spins the turbine wheel."]},
+    {"id": "v04", "t": 16.1, "chunks": ["A shared shaft connects it", "to the compressor wheel.", "Same shaft, same spin."]},
+    {"id": "v05", "t": 21.4, "chunks": ["The compressor crams fresh air", "into the engine", "at higher pressure.", "That extra pressure", "is called BOOST."]},
+    {"id": "v06", "t": 28.6, "chunks": ["But squeezing air heats it up,", "and hot air is less dense.", "So it goes through", "an intercooler first."]},
+    {"id": "v07", "t": 35.5, "chunks": ["Cooler, denser air", "means more air packed", "into every cylinder."]},
+    {"id": "v08", "t": 40.1, "chunks": ["More air lets the engine", "burn more fuel.", "More fuel, more power."]},
+    {"id": "v09", "t": 45.6, "chunks": ["It's not free power, though.", "Some of the engine's output", "goes into driving the turbo."]},
+    {"id": "v10", "t": 51.6, "chunks": ["Exhaust in.", "Boost out.", "That's a turbo."]},
+    {"id": "v11", "t": 55.2, "chunks": ["Follow for the next teardown."]}
+  ]
+}

@@ -1,0 +1,147 @@
+1
+00:00:00,560 --> 00:00:02,655
+Every electric train is a chain.
+
+2
+00:00:02,655 --> 00:00:03,627
+Pull it apart,
+
+3
+00:00:03,627 --> 00:00:05,838
+and you can see every link.
+
+4
+00:00:06,160 --> 00:00:07,822
+Up top, the catenary.
+
+5
+00:00:07,822 --> 00:00:10,222
+Between New Haven and Boston,
+
+6
+00:00:10,222 --> 00:00:12,640
+it carries 25,000 volts.
+
+7
+00:00:12,660 --> 00:00:14,349
+A spring-loaded pantograph
+
+8
+00:00:14,349 --> 00:00:15,903
+presses against the wire
+
+9
+00:00:15,903 --> 00:00:17,947
+and pulls that power down.
+
+10
+00:00:18,060 --> 00:00:19,493
+Inside, a transformer
+
+11
+00:00:19,493 --> 00:00:20,425
+steps it down,
+
+12
+00:00:20,425 --> 00:00:22,073
+and a traction converter
+
+13
+00:00:22,073 --> 00:00:24,240
+reshapes it for the motors.
+
+14
+00:00:24,260 --> 00:00:25,774
+The motors drive the axles
+
+15
+00:00:25,774 --> 00:00:27,147
+through gears.
+
+16
+00:00:27,760 --> 00:00:28,991
+Now the clever part.
+
+17
+00:00:28,991 --> 00:00:30,360
+The wheels aren't flat.
+
+18
+00:00:30,360 --> 00:00:31,739
+They're cones.
+
+19
+00:00:31,860 --> 00:00:32,612
+On a curve,
+
+20
+00:00:32,612 --> 00:00:34,568
+the wheelset slides outward,
+
+21
+00:00:34,568 --> 00:00:36,222
+so the outer wheel rolls
+
+22
+00:00:36,222 --> 00:00:37,651
+on a bigger diameter.
+
+23
+00:00:37,651 --> 00:00:39,796
+The train steers itself.
+
+24
+00:00:39,960 --> 00:00:41,127
+And when it brakes,
+
+25
+00:00:41,127 --> 00:00:42,981
+the motors become generators,
+
+26
+00:00:42,981 --> 00:00:44,776
+sending energy back.
+
+27
+00:00:45,160 --> 00:00:46,278
+Above all of it:
+
+28
+00:00:46,278 --> 00:00:48,034
+positive train control.
+
+29
+00:00:48,034 --> 00:00:48,833
+GPS, radio,
+
+30
+00:00:48,833 --> 00:00:50,509
+and onboard computers
+
+31
+00:00:50,509 --> 00:00:52,186
+that can stop the train
+
+32
+00:00:52,186 --> 00:00:53,634
+on their own.
+
+33
+00:00:53,760 --> 00:00:56,296
+Required by law since 2008.
+
+34
+00:00:56,296 --> 00:00:58,937
+Live on every mandated line
+
+35
+00:00:58,937 --> 00:01:01,117
+by the end of 2020.
+
+36
+00:01:01,560 --> 00:01:02,807
+Wire. Wheel. Signal.
+
+37
+00:01:02,807 --> 00:01:04,250
+That's a train.
