@@ -1,0 +1,135 @@
+[
+ {
+  "id": "v01",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "What if one machine controlled the future of AI?"
+ },
+ {
+  "id": "v02",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "This is an EUV lithography machine. And you see, only one company on Earth can build it."
+ },
+ {
+  "id": "v03",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "It starts with molten tin, dripping through a vacuum."
+ },
+ {
+  "id": "v04",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "A C O two laser hits them. Fifty thousand times a second."
+ },
+ {
+  "id": "v05",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Each bursts into plasma, forty times hotter than the Sun's surface."
+ },
+ {
+  "id": "v06",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "It glows at thirteen point five nanometres. Extreme ultraviolet."
+ },
+ {
+  "id": "v07",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Why the vacuum? Air swallows this light. So does glass."
+ },
+ {
+  "id": "v08",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "So no lenses. Only mirrors."
+ },
+ {
+  "id": "v09",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Each one stacks dozens of molybdenum and silicon layers."
+ },
+ {
+  "id": "v10",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "How smooth? Scaled to Germany, the tallest bump is one millimetre."
+ },
+ {
+  "id": "v11",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "The light hits a patterned mask, then shrinks onto a wafer."
+ },
+ {
+  "id": "v12",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Both stages sprint, yet align within nanometres."
+ },
+ {
+  "id": "v13",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Transistor gates? Around twenty nanometres. A hair? Eighty thousand."
+ },
+ {
+  "id": "v14",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Each costs around one hundred fifty million dollars. The newest, nearly four hundred."
+ },
+ {
+  "id": "v15",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Shipping one takes forty containers and three cargo planes."
+ },
+ {
+  "id": "v16",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "And China? ASML has never shipped it one. Dutch rules block it."
+ },
+ {
+  "id": "v17",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Since twenty twenty two, US rules also curb its top AI chips."
+ },
+ {
+  "id": "v18",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "Of course, it's just a machine. But whoever controls it controls the AI race."
+ },
+ {
+  "id": "v19",
+  "voice": "bm_george",
+  "speed": 1.2,
+  "lang": "en-gb",
+  "text": "What should we take apart next?"
+ }
+]

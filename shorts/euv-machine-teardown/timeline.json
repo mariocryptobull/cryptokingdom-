@@ -1,0 +1,168 @@
+{
+ "dur": 74.0,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.3,
+   "chunks": [
+    "What if one machine",
+    "controlled the future of AI?"
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 3.58,
+   "chunks": [
+    "This is an",
+    "EUV lithography machine.",
+    "And you see, only one company",
+    "on Earth can build it."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 8.95,
+   "chunks": [
+    "It starts with molten tin,",
+    "dripping through a vacuum."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 11.98,
+   "chunks": [
+    "A CO\u2082 laser hits them.",
+    "50,000 times a second."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 15.94,
+   "chunks": [
+    "Each bursts into plasma,",
+    "40\u00d7 hotter than",
+    "the Sun's surface."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 19.99,
+   "chunks": [
+    "It glows at",
+    "13.5 nanometres.",
+    "Extreme ultraviolet."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 24.56,
+   "chunks": [
+    "Why the vacuum?",
+    "Air swallows this light.",
+    "So does glass."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 27.9,
+   "chunks": [
+    "So no lenses.",
+    "Only mirrors."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 30.1,
+   "chunks": [
+    "Each one stacks dozens of",
+    "molybdenum and silicon layers."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 33.57,
+   "chunks": [
+    "How smooth?",
+    "Scaled to Germany,",
+    "the tallest bump is 1 mm."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 37.69,
+   "chunks": [
+    "The light hits a patterned mask,",
+    "then shrinks onto a wafer."
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 41.05,
+   "chunks": [
+    "Both stages sprint,",
+    "yet align within nanometres."
+   ]
+  },
+  {
+   "id": "v13",
+   "t": 44.49,
+   "chunks": [
+    "Transistor gates?",
+    "Around 20 nanometres.",
+    "A hair? 80,000."
+   ]
+  },
+  {
+   "id": "v14",
+   "t": 48.67,
+   "chunks": [
+    "Each costs around",
+    "$150 million.",
+    "The newest, nearly 400."
+   ]
+  },
+  {
+   "id": "v15",
+   "t": 53.55,
+   "chunks": [
+    "Shipping one takes",
+    "40 containers",
+    "and 3 cargo planes."
+   ]
+  },
+  {
+   "id": "v16",
+   "t": 57.23,
+   "chunks": [
+    "And China?",
+    "ASML has never shipped it one.",
+    "Dutch rules block it."
+   ]
+  },
+  {
+   "id": "v17",
+   "t": 61.19,
+   "chunks": [
+    "Since 2022, US rules",
+    "also curb its top AI chips."
+   ]
+  },
+  {
+   "id": "v18",
+   "t": 65.67,
+   "chunks": [
+    "Of course, it's just a machine.",
+    "But whoever controls it",
+    "controls the AI race."
+   ]
+  },
+  {
+   "id": "v19",
+   "t": 70.6,
+   "chunks": [
+    "What should we",
+    "take apart next?"
+   ]
+  }
+ ]
+}
