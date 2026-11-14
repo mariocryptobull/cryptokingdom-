@@ -9,7 +9,7 @@ Paste into a new Claude Code session (one video per session; they render in para
 - Voice: Kokoro `am_michael`, speed ~1.0–1.08 (trim to fit 60–75 s).
 - Styles: Exploded Teardown (template: `shorts/tbm-teardown`, `shorts/bliss-st-teardown`) or PS1 low-poly with the orange tabby cat (template: `shorts/subway-ps1`).
 - Music: NONE by default (the user adds their own house track in-app). In mix.py set `mus = np.zeros((N, 2))`; keep voice + foley, -14 LUFS. Add to POST.md: "No music: add your track in-app, ~15–20 dB under the voice." (Deep house bed `house2.bed('deep', ...)` only if asked.)
-- Closer: an on-screen + spoken "What should we take apart next?" beat, then "Congrats! You've discovered …".
+- Structure: open with a dramatic, hard-hitting question (spoken + on-screen hook), then answer it starting with "You see, …", then explain and tear down. End on the "What should we take apart next?" beat. NEVER use a "Congrats! You've discovered …" line.
 - Style: Exploded Teardown only (the PS1 cat format is retired for now).
 - Research: facts table with sources in `FACTS.md`; captions + hashtags in `POST.md`; credits in `CREDITS`.
 - Before rendering: test stills across the timeline and fix framing/overlaps.
