@@ -1,0 +1,127 @@
+{
+ "dur": 74.6,
+ "vo": [
+  {
+   "id": "v01",
+   "t": 0.2,
+   "chunks": [
+    "Who really profits",
+    "from war?"
+   ]
+  },
+  {
+   "id": "v02",
+   "t": 2.31,
+   "chunks": [
+    "This is the",
+    "military-industrial complex.",
+    "And you see, a president",
+    "warned us about it in 1961.",
+    "A general, no less."
+   ]
+  },
+  {
+   "id": "v03",
+   "t": 10.12,
+   "chunks": [
+    "Dwight Eisenhower.",
+    "Five-star general.",
+    "His farewell warning?",
+    "Guard against unwarranted influence,",
+    "by the military-industrial complex."
+   ]
+  },
+  {
+   "id": "v04",
+   "t": 18.34,
+   "chunks": [
+    "Where did it start?",
+    "World War Two.",
+    "Car plants built bombers.",
+    "Willow Run:",
+    "one B-24 an hour."
+   ]
+  },
+  {
+   "id": "v05",
+   "t": 24.2,
+   "chunks": [
+    "Then the Cold War arms race.",
+    "Its spin-offs?",
+    "Jet engines. Satellites.",
+    "GPS.",
+    "ARPANET, the internet's ancestor."
+   ]
+  },
+  {
+   "id": "v06",
+   "t": 31.67,
+   "chunks": [
+    "Today?",
+    "World military spending:",
+    "$2.9 trillion.",
+    "A record, says SIPRI."
+   ]
+  },
+  {
+   "id": "v07",
+   "t": 36.95,
+   "chunks": [
+    "Who gets the contracts?",
+    "The top 100 arms makers:",
+    "$679 billion.",
+    "Lockheed Martin leads."
+   ]
+  },
+  {
+   "id": "v08",
+   "t": 43.65,
+   "chunks": [
+    "Now explode one fighter jet.",
+    "Engine. Radar.",
+    "Wings. Chips.",
+    "The F-35 alone?",
+    "Over 1,900 suppliers."
+   ]
+  },
+  {
+   "id": "v09",
+   "t": 51.32,
+   "chunks": [
+    "And the climate?",
+    "Militaries: maybe 5.5%",
+    "of global emissions.",
+    "An estimate.",
+    "Reporting is voluntary."
+   ]
+  },
+  {
+   "id": "v10",
+   "t": 58.43,
+   "chunks": [
+    "The new race?",
+    "Drones and AI.",
+    "Ukraine built about",
+    "4 million drones in 2025."
+   ]
+  },
+  {
+   "id": "v11",
+   "t": 64.2,
+   "chunks": [
+    "Of course, the same machine",
+    "also built GPS and the internet.",
+    "Eisenhower's question still stands:",
+    "who's steering it?"
+   ]
+  },
+  {
+   "id": "v12",
+   "t": 71.25,
+   "chunks": [
+    "What should we",
+    "take apart next?"
+   ]
+  }
+ ]
+}
